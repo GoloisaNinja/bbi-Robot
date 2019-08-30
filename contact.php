@@ -17,10 +17,7 @@
     "From: $sender<$senderEmail>");
     $thankYou="<p>Thank you BoneSack! Your Bad Business Idea has been submitted! Check back soon!</p>"
   }
- ?>
-
-
-<!DOCTYPE html>
+ ?><!DOCTYPE html>
 <html lang="" dir="ltr">
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width">
