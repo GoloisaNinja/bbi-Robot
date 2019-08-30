@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Get Started!</title>
+  </head>
+
+  <body class="surveyPage">
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="index.html">BBI Initiative</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="index.html">Home</a>
+      <a class="nav-item nav-link active" href="#">Get Started <span class="sr-only">(current)</span> </a>
+      <a class="nav-item nav-link" href="contact.php">Contact Us!</a>
+      <a class="nav-item nav-link" href="https://www.newbsanity.com">Newbsanity</a>
+      <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Pricing</a>
+    </div>
+  </div>
+</nav>
+
+
+
+
+      <!-- <div class="container"> -->
+        <div class="jumbotron">
+        <h1 class="display-4">Let's get Started!</h1>
+        <p class="lead">You are making the right choice.  Go ahead and buy the vacation home in the Hamptons and the gold colored terrycloth robe.  You are about to start smelling like champagne in places you didn't think possible.</p>
+        <hr class="my-4">
+        <p class=jumboText>Click the "Initiate BBI" button below to start the questionarre.  Just answer the questions in the form and engage the robots. Remember to be compelely honest.  We don't ask for your name or email address, so no one will judge you for your creepy answers.</p>
+        <p class=jumboText>Let today be the day that you started thinking about tomorrow.  It's time to channel Katy Perry and steal ideas and then act like they're yours!</p>
+
+        <button type="button" class="btn btn-danger btn-lg" name="button" id="iniSurvey">Initiate BBI</button>
+
+        </div>
+      <!-- </div> -->
+<div id="hiddenForm">
+
+
+
+
+
+
+
+      <div class="container">
+
+
+      <form name="form-one" id="bbiQuestions" action="results.html">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputFN4">First Name Please</label>
+        <input type="text" class="form-control" name="fName" id="inputFN4" placeholder="John Connor" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputBusType4">What is your current business?</label>
+        <input type="text" class="form-control" id="inputBusType4" placeholder="Making lead based paint for kids toys" required>
+      </div>
+    </div>
+    <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputYrsEmp">Years employed with this company?</label>
+      <select id="inputYrsEmp" class="form-control" required>
+        <option selected>Just started:They love me</option>
+        <option>Just started:They hate me</option>
+        <option>1-3 yrs:I'm amazing</option>
+        <option>1-3 yrs:I surf etsy all day</option>
+        <option>3-5 yrs:I've been given awards</option>
+        <option>3-5 yrs:Boss doesn't know my name</option>
+        <option>5-10 yrs:Every day is exciting</option>
+        <option>5-10 yrs:I start fires in closets</option>+
+        <option>10+yrs:I'm a benevolent god</option>
+        <option>10+yrs:I just want to die</option>
+      </select>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputIdeaImpact">What kind of impact should your idea make?</label>
+      <select id="inputIdeaImpact" class="form-control" required>
+        <option selected>A marble falling into playdoh from 2 feet</option>
+        <option>A big marble falling into milk</option>
+        <option>Jupiter hitting Earth at lightspeed</option>
+      </select>
+    </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputFreud">Freud Time! First word in your head, GO!</label>
+        <input type="text" class="form-control" id="inputFreud" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputImpAttrib">Finally, select the most relevant idea attribute</label>
+        <select id="inputImpAttrib" class="form-control" required>
+          <option selected>Company Profitablity</option>
+          <option>Personal Financial Gain</option>
+          <option>Putting a curse on a fellow employee</option>
+          <option>Innovation</option>
+          <option>Sucking up to the CEO</option>
+          <option>Making Friends</option>
+          <option>Being a better Person</option>
+          <option>Creating your own Religion</option>
+          <option>Random</option>
+        </select>
+    </div>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck" required>
+        <label class="form-check-label" for="gridCheck">Acknowledge our Terms and Conditions - no you may not read them</label>
+      </div>
+    </div>
+    <button type="submit" id="bbiSubmit" class="btn btn-danger btn-lg">Engage the Robots!</button>
+  </form>
+  </div>
+
+  <br>
+  <br>
+  <div class="container">
+    <p>It's important to understand this site can be used for both good and evil.  We, the creators, cannot be held responsible for anything naughty or dastardly that comes from this epic tool.  However, we can, and will, take credit and royalties for anything awesome and/or profitable that is born from this tool.</p>
+    <p>We don't personally have lawyers, but my guy Pete is on his 17th year of law school and he swears this year he's going to graduate.  It's not just for the chicks and sweatshirts anymore.  Meaning, in short, that we can sue, in perpituity, for any/all reasons or motives, known/unknown, real/ghost.</p>
+    <p>Finally, we'd like to acknowledge a cool place to go and get yelled at about your lack of fitness.  Even if you think you're fit, you're not.  Even if you think you're pretty and special.  You're not.  You are weak and your face lacks symmetry.  You're the worst.  But the good news is. Newbsanity can help make you less worse.  Click the link in the navbar to visit the Newbsanity site and pick up a membership along with some self respect, loser.</p>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+  </body>
+</html>
