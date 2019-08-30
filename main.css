@@ -70,7 +70,7 @@
   text-align: center;
   font-weight: bold;
 }
-#turtleBut:hover, #amazeBalls:hover, #iniSurvey:hover, #bbiSubmit:hover, #bbiResult:hover, #drawingSchool:hover, #hibachiLink:hover, #badThank:hover, #contactSubmit:hover{
+#turtleBut:hover, #amazeBalls:hover, #iniSurvey:hover, #bbiSubmit:hover, #bbiResult:hover, #drawingSchool:hover, #hibachiLink:hover, #badThank:hover, #contactSubmit:hover, #sendThank:hover{
   color: #FC2629!important;
   background-color: #141414;
   font-weight: bold;
@@ -114,7 +114,7 @@
   background-color: #141414;
   border-bottom: none;
 }
-.modal-body, #badModal{
+.modal-body, #badModal, #contactSent{
   background-color: #21242e;
   border-bottom: none;
 }
