@@ -1,0 +1,129 @@
+.jumbotron{
+
+    background-image: url("https://i.imgur.com/RUEkGW2.jpg");
+    background-size: cover;
+  }
+.bg{
+  height: 100%;
+  background-image: url("https://i.imgur.com/RUEkGW2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.resultsPage, .mainPageBody, .surveyPage{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
+}
+  #cardButtons{
+      font-weight: bold;
+  }
+  #mainLoremP{
+      font-family: 'Open Sans Condensed', sans-serif;
+      color: white;
+      text-align: center;
+  }
+  #hiddenForm{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+  body{
+    margin-top: 50px;
+    background-color: #141414;
+  }
+  label{
+    font-weight: bold;
+}
+  option{
+    font-weight: bold;
+  }
+#inputFN4, #inputYrsEmp, #inputBusType4, #inputIdeaImpact, #inputFreud, #inputImpAttrib{
+  font-weight: bold;
+}
+#accOne, #accTwo, #accThree, #accFour{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
+  background-color: #141414;
+  font-weight: bold;
+  font-size: .65em;
+}
+#accOne:hover, #accTwo:hover, #accThree:hover, #accFour:hover{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
+  background-color: #fc2629;
+}
+#collapseOne, #collapseTwo, #collapseThree, #collapseFour{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
+  background-color: #21242e;
+  text-align: center;
+}
+.card{
+  background-color: #141414;
+
+}
+.accordion{
+  font-size: 1.15em;
+}
+#cousinBut{
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+#turtleBut:hover, #amazeBalls:hover, #iniSurvey:hover, #bbiSubmit:hover, #bbiResult:hover, #drawingSchool:hover, #hibachiLink:hover, #badThank:hover{
+  color: #FC2629!important;
+  background-color: #141414;
+  font-weight: bold;
+}
+
+#grenadeFlavoredWater{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: .25em;
+  color: white;
+  text-align: center;
+}
+.jumboText{
+  font-size: 1.15em;
+}
+.jumboText2{
+  font-size: 1.01em;
+}
+#mashupCont{
+  text-align: center:
+
+}
+#conclusionsMashup{
+  color: white;
+  text-align: center;
+}
+#bbiButDiv{
+  text-align: center;
+}
+.imgcontainer{
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+#headingOne, #headingTwo, #headingThree, #headingFour{
+  text-align: center;
+}
+.card-body{
+  text-align: left;
+}
+.modal-header{
+  background-color: #141414;
+  border-bottom: none;
+}
+.modal-body, #badModal{
+  background-color: #21242e;
+  border-bottom: none;
+}
+#hibachiText{
+  color: white;
+}
+.modal-footer{
+  border-top: none;
+}
+#mash{
+  text-align: center;
+}
