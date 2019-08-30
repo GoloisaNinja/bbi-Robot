@@ -228,6 +228,30 @@ const pageCheck = function(){
 
       document.querySelector('#conclusionsMashup').textContent = mashUp
       document.querySelector('#badBusinessIdea').textContent = pBadTag
+} else if (pageBody.className === "contactPageBody") {
+    let contactName = ''
+    let contactEmail = ''
+    let contactCategory = ''
+    let contactTagList = ''
+    let contactIdeaVal = ''
+    const formData = document.querySelector("#form-two")
+    formData.addEventListener('submit', function(e){
+      contactName = e.target.elements.contactFN4.value
+      contactEmail = e.target.elements.emailType4.value
+      contactCategory = e.target.elements.contactCat.value
+      contactTagList = e.target.elements.contactTags.value
+      contactIdeaVal = e.target.elements.contactIdeaInput.value
+      $.post("contact.php", {
+        Name: contactName,
+        Email: contactEmail,
+        Category: contactCategory,
+        Tag List: contactTagList,
+        Bad Business Idea: contactIdeaVal
+      })
+    $('#contactSent').modal('show')
+    $('#form-two')[0].reset() 
+    })
+    
   }
 }
 
