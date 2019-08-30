@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.resultsPage, .mainPageBody, .surveyPage{
+.resultsPage, .mainPageBody, .surveyPage, .contactPageBody{
   font-family: 'Open Sans Condensed', sans-serif;
   color: white;
 }
@@ -37,7 +37,7 @@
   option{
     font-weight: bold;
   }
-#inputFN4, #inputYrsEmp, #inputBusType4, #inputIdeaImpact, #inputFreud, #inputImpAttrib{
+#inputFN4, #inputYrsEmp, #inputBusType4, #inputIdeaImpact, #inputFreud, #inputImpAttrib, #contactFN4, #emailType4, #contactCat, #contactTags, #contactIdeaInput{
   font-weight: bold;
 }
 #accOne, #accTwo, #accThree, #accFour{
@@ -70,7 +70,7 @@
   text-align: center;
   font-weight: bold;
 }
-#turtleBut:hover, #amazeBalls:hover, #iniSurvey:hover, #bbiSubmit:hover, #bbiResult:hover, #drawingSchool:hover, #hibachiLink:hover, #badThank:hover{
+#turtleBut:hover, #amazeBalls:hover, #iniSurvey:hover, #bbiSubmit:hover, #bbiResult:hover, #drawingSchool:hover, #hibachiLink:hover, #badThank:hover, #contactSubmit:hover{
   color: #FC2629!important;
   background-color: #141414;
   font-weight: bold;
@@ -124,6 +124,13 @@
 .modal-footer{
   border-top: none;
 }
+#redCheck{
+  color: red;
+}
 #mash{
   text-align: center;
+}
+#contactUs{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
 }
