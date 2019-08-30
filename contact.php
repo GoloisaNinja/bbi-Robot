@@ -1,4 +1,15 @@
-<?php
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Contact Us!</title>
+</head>
+  <body class="contactPageBody">
+    
+    <?php
   if($_POST["submit"]){
     $recipient="holidayninjastaff@gmail.com";
     $subject="Bad Business Idea Submission";
@@ -17,16 +28,8 @@
     "From: $sender<$senderEmail>");
     $thankYou="<p>Thank you BoneSack! Your Bad Business Idea has been submitted! Check back soon!</p>"
   }
- ?><!DOCTYPE html>
-<html lang="" dir="ltr">
-  <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-    <title>Contact Us!</title>
-</head>
-  <body class="contactPageBody">
+ ?>
+    
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="#">BBI Initiative</a>
