@@ -1,9 +1,9 @@
- <?php
- $name = $_POST['fName2'];
- $email = $_POST['emailType4'];
- $cat = $_POST['ideaCat'];
- $tag = $_POST['contactTag'];
- $idea = $_POST['contactIdeaInput'];
+<?php
+ $name = $_POST['Name'];
+ $email = $_POST['Email'];
+ $cat = $_POST['Category'];
+ $tag = $_POST['Tag List'];
+ $idea = $_POST['Bad Business Idea'];
  $formcontent="From: $name \n Email: $email \n Category: $cat \n Tags: $tag \n Idea: $idea";
  $recipient = "holidayninjastaff@gmail.com";
  $subject = "Bad Business Idea Submission";
