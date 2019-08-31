@@ -245,8 +245,8 @@ const pageCheck = function(){
         Name: contactName,
         Email: contactEmail,
         Category: contactCategory,
-        Tag List: contactTagList,
-        Bad Business Idea: contactIdeaVal
+        TagList: contactTagList,
+        BadBusinessIdea: contactIdeaVal
       })
     $('#contactSent').modal('show')
     $('#form-two')[0].reset()
