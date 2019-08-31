@@ -241,7 +241,7 @@ const pageCheck = function(){
       contactCategory = e.target.elements.contactCat.value
       contactTagList = e.target.elements.contactTags.value
       contactIdeaVal = e.target.elements.contactIdeaInput.value
-      
+
       const myUrl = "contact.php"
       const xContact = new XMLHttpRequest()
       xContact.open("POST", myUrl, true)
@@ -251,7 +251,7 @@ const pageCheck = function(){
         Email: contactEmail,
         Category: contactCategory,
         TagList: contactTagList,
-        BadBusinessIdea: contractIdeaVal
+        BadBusinessIdea: contactIdeaVal
       }))
 
       // $.post("contact.php", {
