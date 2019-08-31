@@ -241,13 +241,27 @@ const pageCheck = function(){
       contactCategory = e.target.elements.contactCat.value
       contactTagList = e.target.elements.contactTags.value
       contactIdeaVal = e.target.elements.contactIdeaInput.value
-      $.post("contact.php", {
+      
+      const myUrl = "contact.php"
+      const xContact = new XMLHttpRequest()
+      xContact.open("POST", myUrl, true)
+      xContact.setRequestHeader('Content-Type', 'application/json')
+      xContact.send(JSON.stringify({
         Name: contactName,
         Email: contactEmail,
         Category: contactCategory,
         TagList: contactTagList,
-        BadBusinessIdea: contactIdeaVal
-      })
+        BadBusinessIdea: contractIdeaVal
+      }))
+
+      // $.post("contact.php", {
+      //   Name: contactName,
+      //   Email: contactEmail,
+      //   Category: contactCategory,
+      //   TagList: contactTagList,
+      //   BadBusinessIdea: contactIdeaVal
+      // })
+
     $('#contactSent').modal('show')
     $('#form-two')[0].reset()
     })
