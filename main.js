@@ -99,7 +99,7 @@ const badBusinessIdeaArray = [{
   tags: 'apocalypse, religion, christ, church, insanity, cable access, wayne\'s world, party time, excellent, bunker, bible, god, jesus, multi level marketing scheme, scheme, private jet, jets, ',
   level: 3,
   goal: 'creating your own religion, personal financial gain'
-}]                              
+}]
 
 console.log(badBusinessIdeaArray[2].idea);
 
@@ -249,9 +249,9 @@ const pageCheck = function(){
         Bad Business Idea: contactIdeaVal
       })
     $('#contactSent').modal('show')
-    $('#form-two')[0].reset() 
+    $('#form-two')[0].reset()
     })
-    
+
   }
 }
 
