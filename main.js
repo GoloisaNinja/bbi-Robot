@@ -242,17 +242,30 @@ const pageCheck = function(){
       contactTagList = e.target.elements.contactTags.value
       contactIdeaVal = e.target.elements.contactIdeaInput.value
 
-      const myUrl = "contact.php"
-      const xContact = new XMLHttpRequest()
-      xContact.open("POST", myUrl, true)
-      xContact.setRequestHeader('Content-Type', 'application/json')
-      xContact.send(JSON.stringify({
+      const data = {
         Name: contactName,
         Email: contactEmail,
         Category: contactCategory,
         TagList: contactTagList,
         BadBusinessIdea: contactIdeaVal
-      }))
+      }
+
+      fetch("contact.php", {
+        method: "POST",
+        body: JSON.stringify(data)
+      })
+
+      // const myUrl = "contact.php"
+      // const xContact = new XMLHttpRequest()
+      // xContact.open("POST", myUrl, true)
+      // xContact.setRequestHeader('Content-Type', 'application/json')
+      // xContact.send(JSON.stringify({
+      //   Name: contactName,
+      //   Email: contactEmail,
+      //   Category: contactCategory,
+      //   TagList: contactTagList,
+      //   BadBusinessIdea: contactIdeaVal
+      // }))
 
       // $.post("contact.php", {
       //   Name: contactName,
