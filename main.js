@@ -263,7 +263,7 @@ const pageCheck = function(){
       // })
 
     $('#contactSent').modal('show')
-    $('#form-two')[0].reset()
+    $('#contactUs')[0].reset()
     })
 
   }
