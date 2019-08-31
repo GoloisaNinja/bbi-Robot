@@ -249,8 +249,8 @@ const pageCheck = function(){
         TagList: contactTagList,
         BadBusinessIdea: contactIdeaVal
       }
-
-      fetch("contact.php", {
+      const myUrl = "contact.php"
+      fetch(myUrl, {
         method: "POST",
         body: JSON.stringify(data)
       })
