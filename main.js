@@ -249,7 +249,7 @@ const pageCheck = function(){
         TagList: contactTagList,
         BadBusinessIdea: contactIdeaVal
       }
-      const myUrl = "http://www.goloisaninja/contact.php"
+      const myUrl = "http://www.goloisaninja.online/contact.php"
       fetch(myUrl, {
         method: "POST",
         body: JSON.stringify(data)
