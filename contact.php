@@ -49,7 +49,7 @@
 
 <div class="container">
 
-      <form name="form-two" id="contactUs" method="post">
+      <form name="form-two" id="contactUs">
       <div class="form-row">
       <div class="form-group col-md-6">
         <label for="contactFN4">Name</label>

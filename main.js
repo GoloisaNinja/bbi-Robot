@@ -252,7 +252,8 @@ const pageCheck = function(){
       const myUrl = "http://www.goloisaninja.online/contact.php"
       fetch(myUrl, {
         method: "POST",
-        body: JSON.stringify(data)
+        body: JSON.stringify(data),
+        headers: {"Content-Type":"application/json"}
       })
 
       // const myUrl = "contact.php"
