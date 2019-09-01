@@ -250,7 +250,7 @@ const pageCheck = function(){
         BadBusinessIdea: contactIdeaVal
       }
       const myUrl = "http://www.goloisaninja.online/contact.php"
-      let response = awiat fetch(myUrl, {
+      let response = await fetch(myUrl, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(data),
