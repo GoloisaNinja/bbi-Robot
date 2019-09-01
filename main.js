@@ -256,8 +256,6 @@ const pageCheck = function(){
         body: JSON.stringify(data),
       })
 
-      
-    }
 
       // const myUrl = "contact.php"
       // const xContact = new XMLHttpRequest()
