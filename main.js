@@ -241,7 +241,7 @@ const pageCheck = function(){
       contactCategory = e.target.elements.contactCat.value
       contactTagList = e.target.elements.contactTags.value
       contactIdeaVal = e.target.elements.contactIdeaInput.value
-
+      const makePost = async function(){
       const data = {
         Name: contactName,
         Email: contactEmail,
@@ -258,7 +258,8 @@ const pageCheck = function(){
 
       let result = await response.json()
       console.log(result.message);
-
+    }
+    makePost()
       // const myUrl = "contact.php"
       // const xContact = new XMLHttpRequest()
       // xContact.open("POST", myUrl, true)
