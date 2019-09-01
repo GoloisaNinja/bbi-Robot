@@ -249,12 +249,15 @@ const pageCheck = function(){
         TagList: contactTagList,
         BadBusinessIdea: contactIdeaVal
       }
-      const myUrl = "contact.php"
-      fetch(myUrl, {
-        method: "POST",
+      const myUrl = "http://www.goloisaninja.online/contact.php"
+      let response = awiat fetch(myUrl, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(data),
-        headers: {"Content-Type":"application/json"}
       })
+
+      let result = await response.json()
+      console.log(result.message);
 
       // const myUrl = "contact.php"
       // const xContact = new XMLHttpRequest()
