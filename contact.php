@@ -1,13 +1,13 @@
 <?php
- $name = $_POST['Name'];
- $email = $_POST['Email'];
- $cat = $_POST['Category'];
- $tag = $_POST['TagList'];
- $idea = $_POST['BadBusinessIdea'];
- $formcontent="From: $name \n Email: $email \n Category: $cat \n Tags: $tag \n Idea: $idea";
+ $post['Name'] = $_POST['Name'];
+ $post['Email'] = $_POST['Email'];
+ $post['Category'] = $_POST['Category'];
+ $post['TagList'] = $_POST['TagList'];
+ $post['BadBusinessIdea'] = $_POST['BadBusinessIdea'];
+ $formcontent="From: $post['Name'] \n Email: $post['Email'] \n Category: $post['Category'] \n Tags: $post['TagList'] \n Idea: $post['BadBusinessIdea']";
  $recipient = "holidayninjastaff@gmail.com";
  $subject = "Bad Business Idea Submission";
- $mailheader = "From: $email \r\n";
+ $mailheader = "From: $post['Email'] \r\n";
  mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
  ?><!DOCTYPE html>
 <html lang="" dir="ltr">
