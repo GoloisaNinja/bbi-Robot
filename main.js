@@ -241,7 +241,7 @@ const pageCheck = function(){
       contactCategory = e.target.elements.contactCat.value
       contactTagList = e.target.elements.contactTags.value
       contactIdeaVal = e.target.elements.contactIdeaInput.value
-      const makePost = async function(){
+
       const data = {
         Name: contactName,
         Email: contactEmail,
@@ -250,16 +250,15 @@ const pageCheck = function(){
         BadBusinessIdea: contactIdeaVal
       }
       const myUrl = "http://www.goloisaninja.online/contact.php"
-      let response = await fetch(myUrl, {
+        fetch(myUrl, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(data),
       })
 
-      let result = await response.json()
-      console.log(result.message);
+      
     }
-    makePost()
+
       // const myUrl = "contact.php"
       // const xContact = new XMLHttpRequest()
       // xContact.open("POST", myUrl, true)
