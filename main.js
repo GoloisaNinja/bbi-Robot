@@ -235,7 +235,7 @@ const pageCheck = function(){
     let contactTagList = ''
     let contactIdeaVal = ''
     const formData = document.querySelector("#contactUs")
-    formData.addEventListener('submit', function(e){
+    formData.addEventListener('click', function(e){
       contactName = e.target.elements.contactFN4.value
       contactEmail = e.target.elements.emailType4.value
       contactCategory = e.target.elements.contactCat.value
@@ -249,7 +249,7 @@ const pageCheck = function(){
         TagList: contactTagList,
         BadBusinessIdea: contactIdeaVal
       }
-      const myUrl = "http://www.goloisaninja.online/contact.php"
+      const myUrl = 'contact.php'
         fetch(myUrl, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
