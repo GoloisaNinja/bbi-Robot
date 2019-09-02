@@ -9,7 +9,8 @@
  $subject = "Bad Business Idea Submission";
  $mailheader = "From: $post['Email'] \r\n";
  mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
- ?><!DOCTYPE html>
+ ?>
+ <!DOCTYPE html>
 <html lang="" dir="ltr">
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width">
@@ -90,7 +91,7 @@
       </div>
       </div>
       <br>
-      <button type="submit" id="contactSubmit" class="btn btn-danger">Send the Badness</button>
+      <button type="btn" id="contactSubmit" class="btn btn-danger">Send the Badness</button>
       </form>
 
 </div>
