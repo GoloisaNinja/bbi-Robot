@@ -234,27 +234,28 @@ const pageCheck = function(){
     let contactCategory = ''
     let contactTagList = ''
     let contactIdeaVal = ''
-    const formData = document.querySelector("#contactSubmit")
-    formData.addEventListener('click', function(e){
-      contactName = e.target.elements.contactFN4.value
-      contactEmail = e.target.elements.emailType4.value
-      contactCategory = e.target.elements.contactCat.value
-      contactTagList = e.target.elements.contactTags.value
-      contactIdeaVal = e.target.elements.contactIdeaInput.value
 
-      const data = {
-        Name: contactName,
-        Email: contactEmail,
-        Category: contactCategory,
-        TagList: contactTagList,
-        BadBusinessIdea: contactIdeaVal
-      }
-      const myUrl = 'contact.php'
-        fetch(myUrl, {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(data),
-      })
+    // const formData = document.querySelector("#contactSubmit")
+    // formData.addEventListener('click', function(e){
+    //   contactName = e.target.elements.contactFN4.value
+    //   contactEmail = e.target.elements.emailType4.value
+    //   contactCategory = e.target.elements.contactCat.value
+    //   contactTagList = e.target.elements.contactTags.value
+    //   contactIdeaVal = e.target.elements.contactIdeaInput.value
+    //
+    //   const data = {
+    //     Name: contactName,
+    //     Email: contactEmail,
+    //     Category: contactCategory,
+    //     TagList: contactTagList,
+    //     BadBusinessIdea: contactIdeaVal
+    //   }
+    //   const myUrl = 'contact.php'
+    //     fetch(myUrl, {
+    //     method: 'POST',
+    //     headers: {'Content-Type': 'application/json'},
+    //     body: JSON.stringify(data),
+    //   })
 
 
       // const myUrl = "contact.php"
@@ -277,9 +278,9 @@ const pageCheck = function(){
       //   BadBusinessIdea: contactIdeaVal
       // })
 
-    $('#contactSent').modal('show')
-    $('#contactUs')[0].reset()
-    })
+    // $('#contactSent').modal('show')
+    // $('#contactUs')[0].reset()
+    // })
 
   }
 }
