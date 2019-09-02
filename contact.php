@@ -80,7 +80,7 @@
       </div>
       </div>
       <br>
-      <button type="btn" id="contactSubmit" class="btn btn-danger">Send the Badness</button>
+      <button type="submit" id="contactSubmit" class="btn btn-danger">Send the Badness</button>
       </form>
 
 </div>
