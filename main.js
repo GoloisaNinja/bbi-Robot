@@ -244,17 +244,22 @@ const pageCheck = function(){
       contactTagList = e.target.elements.contactTags.value
       contactIdeaVal = e.target.elements.contactIdeaInput.value
 
-      const data = {
+      let data = {
         Name: contactName,
         Email: contactEmail,
         Category: contactCategory,
         TagList: contactTagList,
         BadBusinessIdea: contactIdeaVal
       }
+      data = JSON.stringify(data)
       const xhttp = new XMLHttpRequest
-      xhttp.open('POST', 'contact.php', true)
-      xhttp.send(data)
-      $('#contactSent').modal('show')
+        xhttp.onreadystatechange = function(){
+        if (this.readystatechange === 4 && this.status === 200) {
+          $('#contactSent').modal('show')
+        }
+        xhttp.open('POST', 'contact.php', true)
+        xhttp.send(data)
+      }
       $('#contactUs')[0].reset()
       })
 
@@ -279,7 +284,7 @@ const pageCheck = function(){
       //   BadBusinessIdea: contactIdeaVal
       // })
 
-    
+
 
 
   }
