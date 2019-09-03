@@ -260,6 +260,7 @@ const pageCheck = function(){
       }
       xhttp.open('POST', 'contact.php', true)
       xhttp.send(data)
+      $('#contactSent').modal('show')
       $('#contactUs')[0].reset()
       })
 
