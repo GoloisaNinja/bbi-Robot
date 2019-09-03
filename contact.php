@@ -4,11 +4,11 @@
  $cat = $_POST['Category'];
  $tag = $_POST['TagList'];
  $idea = $_POST['BadBusinessIdea'];
- $formcontent="From: $name \n Email: $email \n Category: $cat \n Tags: $tag \n Idea: $idea";
+ $formcontent = "From: $name \n Email: $email \n Category: $cat \n Tags: $tag \n Idea: $idea";
  $recipient = "holidayninjastaff@gmail.com";
  $subject = "Bad Business Idea Submission";
  $mailheader = "From: $post['Email'] \r\n";
- mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+ mail($recipient, $subject, $formcontent, $mailheader);
 ?>
  <!DOCTYPE html>
 <html lang="" dir="ltr">
