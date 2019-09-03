@@ -278,7 +278,7 @@ const pageCheck = function(){
 
     $('#contactSent').modal('show')
     $('#contactUs')[0].reset()
-    })
+    
 
   }
 }
