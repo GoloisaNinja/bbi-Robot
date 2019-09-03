@@ -1,14 +1,14 @@
 <?php
  $name = $_POST['Name'];
- $email = $_POST['Email'];
- $catBad = $_POST['Category'];
- $catTag = $_POST['TagList'];
- $badIdea = $_POST['BadBusinessIdea']
+// $email = $_POST['Email'];
+ //$catBad = $_POST['Category'];
+ //$catTag = $_POST['TagList'];
+ //$badIdea = $_POST['BadBusinessIdea']
 
- $body = "From: $name \n Email: $email \n Category: $catBad \n Tags: $catTag \n Idea: $badIdea";
- $recip = "holidayninjastaff@gmail.com";
- $subject = "Bad Business Idea Submission";
- $mailHeader = "From: $email \r\n";
+ //$body = "From: $name \n Email: $email \n Category: $catBad \n Tags: $catTag \n Idea: $badIdea";
+ //$recip = "holidayninjastaff@gmail.com";
+ //$subject = "Bad Business Idea Submission";
+ //$mailHeader = "From: $email \r\n";
 
 // mail($recip, $subject, $body, $mailHeader);
 ?>
