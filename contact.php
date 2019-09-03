@@ -1,5 +1,5 @@
 <?php
- 
+ $name = $_POST['Name'];
 ?>
  <!DOCTYPE html>
 <html lang="" dir="ltr">
