@@ -10,7 +10,7 @@
  $subject = "Bad Business Idea Submission";
  $mailHeader = "From: $email \r\n";
 
- mail($recip, $subject, $body, $mailHeader);
+// mail($recip, $subject, $body, $mailHeader);
 ?>
  <!DOCTYPE html>
 <html lang="" dir="ltr">
