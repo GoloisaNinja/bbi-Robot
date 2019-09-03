@@ -1,6 +1,6 @@
 <?php
  $name = $_POST['Name'];
-// $email = $_POST['Email'];
+ $email = $_POST['Email'];
  //$catBad = $_POST['Category'];
  //$catTag = $_POST['TagList'];
  //$badIdea = $_POST['BadBusinessIdea']
