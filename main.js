@@ -229,6 +229,7 @@ const pageCheck = function(){
       document.querySelector('#conclusionsMashup').textContent = mashUp
       document.querySelector('#badBusinessIdea').textContent = pBadTag
 } else if (pageBody.className === "contactPageBody") {
+
     let contactName = ''
     let contactEmail = ''
     let contactCategory = ''
@@ -236,7 +237,7 @@ const pageCheck = function(){
     let contactIdeaVal = ''
 
     const formData = document.querySelector("#contactSubmit")
-    formData.addEventListener('click', function(e){
+    formData.addEventListener('submit', function(e){
       contactName = e.target.elements.contactFN4.value
       contactEmail = e.target.elements.emailType4.value
       contactCategory = e.target.elements.contactCat.value
@@ -286,43 +287,3 @@ const pageCheck = function(){
 }
 
 pageCheck()
-
-
-
-// $(function(){
-//   if($('body').is('.surveyPage')){
-//       const mainSurveyButton = document.querySelector('#iniSurvey')
-//       const mainHidden = document.querySelector('#hiddenForm')
-//       const surveyForm = document.querySelector('#form-one')
-//       mainHidden.style.visibility = 'hidden'
-//
-//       mainSurveyButton.addEventListener('click', function(e){
-//         if (mainHidden.style.visibility === 'hidden') {
-//             mainHidden.style.visibility = 'visible'
-//         } else {
-//             mainHidden.style.visibility = 'hidden'
-//         }
-//       })
-//
-//       surveyForm.addEventListener('submit', function (e) {
-//         e.preventDefault()
-//         surveyName = e.target.elements.fName.value
-//         console.log(surveyName);
-//
-//       })
-//
-//   }
-//
-// })
-
-// const mainSurveyButton = document.querySelector('#iniSurvey')
-// const mainHidden = document.querySelector('#hiddenForm')
-// mainHidden.style.visibility = 'hidden'
-//
-// mainSurveyButton.addEventListener('click', function(e){
-//   if (mainHidden.style.visibility === 'hidden') {
-//       mainHidden.style.visibility = 'visible'
-//   } else {
-//       mainHidden.style.visibility = 'hidden'
-//   }
-// })
