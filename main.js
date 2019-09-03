@@ -252,14 +252,14 @@ const pageCheck = function(){
         BadBusinessIdea: contactIdeaVal
       }
       data = JSON.stringify(data)
-      const xhttp = new XMLHttpRequest
+      const xhttp = new XMLHttpRequest()
         xhttp.onreadystatechange = function(){
         if (this.readystatechange === 4 && this.status === 200) {
           $('#contactSent').modal('show')
         }
-        xhttp.open('POST', 'contact.php', true)
-        xhttp.send(data)
       }
+      xhttp.open('POST', 'contact.php', true)
+      xhttp.send(data)
       $('#contactUs')[0].reset()
       })
 
