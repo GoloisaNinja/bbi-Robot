@@ -251,8 +251,11 @@ const pageCheck = function(){
         TagList: contactTagList,
         BadBusinessIdea: contactIdeaVal
       }
+      const xhttp = new XMLHttpRequest
       xhttp.open('POST', 'contact.php', true)
       xhttp.send(data)
+      $('#contactSent').modal('show')
+      $('#contactUs')[0].reset()
       })
 
 
@@ -276,9 +279,8 @@ const pageCheck = function(){
       //   BadBusinessIdea: contactIdeaVal
       // })
 
-    $('#contactSent').modal('show')
-    $('#contactUs')[0].reset()
     
+
 
   }
 }
