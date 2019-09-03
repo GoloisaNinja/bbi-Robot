@@ -251,11 +251,8 @@ const pageCheck = function(){
         TagList: contactTagList,
         BadBusinessIdea: contactIdeaVal
       }
-      console.log(data);
-      const myUrl = 'contact.php'
-        fetch(myUrl, {
-        method: 'POST',
-        body: JSON.stringify(data),
+      xhttp.open('POST', 'contact.php', true)
+      xhttp.send(data)
       })
 
 
