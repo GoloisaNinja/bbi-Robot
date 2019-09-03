@@ -1,4 +1,7 @@
-
+<?php
+$name=$_POST['Name']
+echo $name;
+?>
  <!DOCTYPE html>
 <html lang="" dir="ltr">
   <head>

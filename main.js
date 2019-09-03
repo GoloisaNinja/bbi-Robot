@@ -255,7 +255,6 @@ const pageCheck = function(){
       const myUrl = 'contact.php'
         fetch(myUrl, {
         method: 'POST',
-        headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(data),
       })
 
