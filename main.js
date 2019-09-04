@@ -303,6 +303,7 @@ const pageCheck = function(){
             cache: false,
             success: function(){
               $('#contactSent').modal('show')
+              $('#contactUs')[0].reset()
             }
           })
         }
