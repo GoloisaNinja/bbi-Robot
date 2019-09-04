@@ -238,6 +238,7 @@ const pageCheck = function(){
 
     const formData = document.querySelector("#contactUs")
     formData.addEventListener('submit', function(e){
+      e.preventDefault()
       contactName = e.target.elements.contactFN4.value
       contactEmail = e.target.elements.emailType4.value
       contactCategory = e.target.elements.contactCat.value
