@@ -238,7 +238,7 @@ const pageCheck = function(){
 
     const formData = document.querySelector("#contactUs")
     formData.addEventListener('submit', function(e){
-      e.preventDefault()
+      //e.preventDefault()
       contactName = e.target.elements.contactFN4.value
       contactEmail = e.target.elements.emailType4.value
       contactCategory = e.target.elements.contactCat.value
@@ -275,7 +275,10 @@ const pageCheck = function(){
       // $('#contactUs')[0].reset()
       })
 
-
+      const endContact = document.querySelector("#sendThank")
+      formData.addEventListener('click', function(e){
+        $('#contactUs')[0].reset()
+      })
       // const myUrl = "contact.php"
       // const xContact = new XMLHttpRequest()
       // xContact.open("POST", myUrl, true)
