@@ -18,3 +18,17 @@
 
  mail($recip, $subject, $body, $mailHeader);
 ?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>
+    <?php
+    echo $body;
+     ?>
+   </p>
+  </body>
+</html>
