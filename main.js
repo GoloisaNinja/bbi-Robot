@@ -277,7 +277,7 @@ const pageCheck = function(){
 
       const endContact = document.querySelector("#sendThank")
       formData.addEventListener('click', function(e){
-        $('#contactUs')[0].reset()
+        formData[0].reset()
       })
       // const myUrl = "contact.php"
       // const xContact = new XMLHttpRequest()
