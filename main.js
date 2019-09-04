@@ -298,7 +298,7 @@ const pageCheck = function(){
         } else {
           $.ajax({
             type: 'POST',
-            url: 'contact.php',
+            url: 'form.php',
             data: frmData,
             cache: false,
             success: function(){
