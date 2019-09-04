@@ -274,7 +274,7 @@ const pageCheck = function(){
       //
       // console.log(frmData);
 
-      const contactFunc = function(){
+      function(contactFunc){
         let contactName = document.querySelector('#contactFN4').textContent
         let contactEmail = document.querySelector('#emailType4').textContent
         let contactCategory = document.querySelector('#contactCat').textContent
