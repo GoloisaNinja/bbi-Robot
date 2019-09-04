@@ -1,9 +1,11 @@
 <?php
- $name = $_POST["Name"];
- $email = $_POST["Email"];
- $catBad = $_POST["Category"];
- $catTag = $_POST["TagList"];
- $badIdea = $_POST["BadBusinessIdea"];
+ $data = $this->input->post('data');
+ $data = json_decode($data);
+ $name = $data->Name;
+ $email = $data->Email;
+ $catBad = $data->Category;
+ $catTag = $data->TagList;
+ $badIdea = $data->BadBusinessIdea;
 
  $body = "From: ".$name."\n";
  $body .= "Email: ".$email."\n";
