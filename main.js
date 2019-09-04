@@ -289,7 +289,7 @@ const pageCheck = function(){
           BadBusinessIdea: contactIdeaVal
         }
 
-        frmData = JSON.stringify(data)
+        frmData = JSON.stringify(frmData)
 
         console.log(frmData);
 
