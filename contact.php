@@ -46,9 +46,11 @@
           Employ your gooey human wish centers that we may add your idea to our robot data tunnels.<br>
           No guarantees meatbag.
         </p>
+        <p>
         <?php
-        <p> echo $body; </p>
+        echo $body; 
          ?>
+       </p>
         </div>
 
 
