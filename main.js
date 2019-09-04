@@ -252,16 +252,19 @@ const pageCheck = function(){
         BadBusinessIdea: contactIdeaVal
       }
       data = JSON.stringify(data)
-      const xhttp = new XMLHttpRequest()
-        xhttp.onreadystatechange = function(){
-        if (this.readystatechange === 4 && this.status === 200) {
-          $('#contactSent').modal('show')
-        }
-      }
-      xhttp.open('POST', 'contact.php', true)
-      xhttp.send(data)
-      $('#contactSent').modal('show')
-      $('#contactUs')[0].reset()
+
+      console.log(data);
+
+      // const xhttp = new XMLHttpRequest()
+      //   xhttp.onreadystatechange = function(){
+      //   if (this.readystatechange === 4 && this.status === 200) {
+      //     $('#contactSent').modal('show')
+      //   }
+      // }
+      // xhttp.open('POST', 'contact.php', true)
+      // xhttp.send(data)
+      // $('#contactSent').modal('show')
+      // $('#contactUs')[0].reset()
       })
 
 
