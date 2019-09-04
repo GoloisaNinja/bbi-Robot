@@ -299,7 +299,7 @@ const pageCheck = function(){
           $.ajax({
             type: 'POST',
             url: 'form.php',
-            ContentType: 'application/json'
+            ContentType: 'application/json',
             data: {'data': frmData},
             cache: false,
             success: function(){
