@@ -298,9 +298,10 @@ const pageCheck = function(){
         } else {
           $.ajax({
             type: 'POST',
-            url: 'form.php',
+            url: '/form.php',
             data: frmData,
             contentType: 'application/json',
+            dataType: 'json',
             cache: false,
             success: function(){
               $('#contactSent').modal('show')
