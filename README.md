@@ -1,6 +1,6 @@
 # bbi-Robot
 
-##Bad Business Idea Initiative
+## Bad Business Idea Initiative
 
 **Idea:** 
 
