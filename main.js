@@ -275,11 +275,11 @@ const pageCheck = function(){
       // console.log(frmData);
 
       function contactFunc(){
-        let contactName = document.querySelector('#contactFN4').textContent
-        let contactEmail = document.querySelector('#emailType4').textContent
-        let contactCategory = document.querySelector('#contactCat').textContent
-        let contactTagList = document.querySelector('#contactTags').textContent
-        let contactIdeaVal = document.querySelector('#contactIdeaInput').textContent
+        let contactName = document.querySelector('#contactFN4').value
+        let contactEmail = document.querySelector('#emailType4').value
+        let contactCategory = document.querySelector('#contactCat').value
+        let contactTagList = document.querySelector('#contactTags').value
+        let contactIdeaVal = document.querySelector('#contactIdeaInput').value
 
         let frmData = {
           Name: contactName,
