@@ -23,10 +23,10 @@ Javascript will contain a vast array of Bad Business Ideas, ex. Make Dinosaur Is
 
 **Future expansion:**
 
-- [] Move Bad Business Idea arrays/categories etc. to Data Base
-- [] Learn Data Base language/use (maybe do this first)
+- [ ] Move Bad Business Idea arrays/categories etc. to Data Base
+- [ ] Learn Data Base language/use (maybe do this first)
 - [x] Add a contact page that will support email submission of Bad Business Ideas
-- [] Implement work flow to push submitted ideas to database if approved 
+- [ ] Implement work flow to push submitted ideas to database if approved 
 
 **Screenshots**
 
