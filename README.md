@@ -42,6 +42,11 @@ Return of Bad Business Idea
 
 ![Bad Business Idea](https://i.imgur.com/ColVmR8.jpg)
 
+Recently added Contact Us page
+
+![Contact Page](https://i.imgur.com/5ELvcSQ.jpg)
+
 
 Site is currently hosted at
-Http://www.goloisaninja.online
+
+http://www.goloisaninja.online
