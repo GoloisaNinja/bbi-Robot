@@ -309,6 +309,11 @@ const pageCheck = function(){
         return false
       }
 
+      const submitCon = document.querySelector('#contactSubmit')
+      submitCon.addEventListener('click', function(){
+        contactFunc()
+      })
+
       // const myUrl = "contact.php"
       // const xContact = new XMLHttpRequest()
       // xContact.open("POST", myUrl, true)

@@ -98,7 +98,7 @@
       </div>
       </div>
       <br>
-      <button type="button" onclick="contactFunc()" id="contactSubmit" class="btn btn-danger">Send the Badness</button>
+      <button type="button" id="contactSubmit" class="btn btn-danger">Send the Badness</button>
       </form>
 
 </div>
