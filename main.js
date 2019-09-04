@@ -299,7 +299,8 @@ const pageCheck = function(){
           $.ajax({
             type: 'POST',
             url: 'form.php',
-            data: frmData,
+            ContentType: 'application/json'
+            data: {'data': frmData},
             cache: false,
             success: function(){
               $('#contactSent').modal('show')
