@@ -13,7 +13,8 @@
 
  $recip = "holidayninjastaff@gmail.com";
  $subject = "Bad Business Idea Submission";
- $mailHeader = "From: " . $email . "\r\n";
+ $mailHeader = "From: ".$email."\r\n";
+ $thank ="Thank you";
 
  mail($recip, $subject, $body, $mailHeader);
 ?>
@@ -53,11 +54,7 @@
         </p>
         <p>
         <?php
-        if (isset($name))
-        {
-          echo $name
-        }
-        echo $body;
+        echo $thank
          ?>
        </p>
         </div>
