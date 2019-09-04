@@ -1,6 +1,5 @@
 <?php
- $data = $this->input->post('data');
- $data = json_decode($data);
+ $data = json_decode(file_get_contents("php://input"));
  $name = $data->Name;
  $email = $data->Email;
  $catBad = $data->Category;
