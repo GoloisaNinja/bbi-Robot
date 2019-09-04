@@ -104,7 +104,7 @@
       </div>
       </div>
       <br>
-      <a href="#" type="button" id="contactSubmit" class="btn btn-danger btn-lg">Send the Badness</a>
+      <button type="submit" id="contactSubmit" class="btn btn-danger btn-lg">Send the Badness</button>
       </form>
 
 </div>
