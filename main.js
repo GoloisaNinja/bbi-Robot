@@ -300,6 +300,7 @@ const pageCheck = function(){
             type: 'POST',
             url: 'form.php',
             data: frmData,
+            contentType: 'application/json',
             cache: false,
             success: function(){
               $('#contactSent').modal('show')
