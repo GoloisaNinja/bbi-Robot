@@ -256,6 +256,13 @@ const pageCheck = function(){
 
       console.log(data);
 
+      const myUrl = "contact.php"
+      const xContact = new XMLHttpRequest()
+      xContact.open("POST", myUrl, true)
+      xContact.setRequestHeader('Content-Type', 'application/json')
+      xContact.send(data)
+      $('#contactSent').modal('show')
+
       // const xhttp = new XMLHttpRequest()
       //   xhttp.onreadystatechange = function(){
       //   if (this.readystatechange === 4 && this.status === 200) {
