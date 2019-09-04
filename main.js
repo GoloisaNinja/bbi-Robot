@@ -230,38 +230,91 @@ const pageCheck = function(){
       document.querySelector('#badBusinessIdea').textContent = pBadTag
 } else if (pageBody.className === "contactPageBody") {
 
-    let contactName = ''
-    let contactEmail = ''
-    let contactCategory = ''
-    let contactTagList = ''
-    let contactIdeaVal = ''
+    // let contactName = document.querySelector('#contactFN4').textContent
+    // let contactEmail = document.querySelector('#emailType4').textContent
+    // let contactCategory = document.querySelector('#contactCat').textContent
+    // let contactTagList = document.querySelector('#contactTags').textContent
+    // let contactIdeaVal = document.querySelector('#contactIdeaInput').textContent
 
-    const formData = document.querySelector("#contactUs")
-    formData.addEventListener('submit', function(e){
-      //e.preventDefault()
-      contactName = e.target.elements.contactFN4.value
-      contactEmail = e.target.elements.emailType4.value
-      contactCategory = e.target.elements.contactCat.value
-      contactTagList = e.target.elements.contactTags.value
-      contactIdeaVal = e.target.elements.contactIdeaInput.value
+    // let data = {
+    //   Name: contactName,
+    //   Email: contactEmail,
+    //   Category: contactCategory,
+    //   TagList: contactTagList,
+    //   BadBusinessIdea: contactIdeaVal
+    // }
+    // data = JSON.stringify(data)
+    //
+    //
+    // let contactName = ''
+    // let contactEmail = ''
+    // let contactCategory = ''
+    // let contactTagList = ''
+    // let contactIdeaVal = ''
+    //
+    //
+    //
+    // const formData = document.querySelector("#contactUs")
+    // formData.addEventListener('submit', function(e){
+    //   //e.preventDefault()
+    //   contactName = e.target.elements.contactFN4.value
+    //   contactEmail = e.target.elements.emailType4.value
+    //   contactCategory = e.target.elements.contactCat.value
+    //   contactTagList = e.target.elements.contactTags.value
+    //   contactIdeaVal = e.target.elements.contactIdeaInput.value
 
-      let data = {
-        Name: contactName,
-        Email: contactEmail,
-        Category: contactCategory,
-        TagList: contactTagList,
-        BadBusinessIdea: contactIdeaVal
+      // let frmData = {
+      //   Name: contactName,
+      //   Email: contactEmail,
+      //   Category: contactCategory,
+      //   TagList: contactTagList,
+      //   BadBusinessIdea: contactIdeaVal
+      // }
+      // frmData = JSON.stringify(data)
+      //
+      // console.log(frmData);
+
+      const contactFunc = function(){
+        let contactName = document.querySelector('#contactFN4').textContent
+        let contactEmail = document.querySelector('#emailType4').textContent
+        let contactCategory = document.querySelector('#contactCat').textContent
+        let contactTagList = document.querySelector('#contactTags').textContent
+        let contactIdeaVal = document.querySelector('#contactIdeaInput').textContent
+
+        let frmData = {
+          Name: contactName,
+          Email: contactEmail,
+          Category: contactCategory,
+          TagList: contactTagList,
+          BadBusinessIdea: contactIdeaVal
+        }
+
+        frmData = JSON.stringify(data)
+
+        console.log(frmData);
+
+        if (contactName == '' || contactEmail == '' || contactCategory == '' || contactTagList == '' || contactIdeaVal == '') {
+          alert('You need to fill out all fields meatbag...')
+        } else {
+          $.ajax({
+            type: 'POST',
+            url: 'contact.php',
+            data: frmData,
+            cache: false,
+            success: function(){
+              $('#contactSent').modal('show')
+            }
+          })
+        }
+        return false
       }
-      data = JSON.stringify(data)
 
-      console.log(data);
-
-      const myUrl = "contact.php"
-      const xContact = new XMLHttpRequest()
-      xContact.open("POST", myUrl, true)
-      xContact.setRequestHeader('Content-Type', 'application/json')
-      xContact.send(data)
-      $('#contactSent').modal('show')
+      // const myUrl = "contact.php"
+      // const xContact = new XMLHttpRequest()
+      // xContact.open("POST", myUrl, true)
+      // xContact.setRequestHeader('Content-Type', 'application/json')
+      // xContact.send(data)
+      // $('#contactSent').modal('show')
 
       // const xhttp = new XMLHttpRequest()
       //   xhttp.onreadystatechange = function(){
@@ -273,12 +326,12 @@ const pageCheck = function(){
       // xhttp.send(data)
       // $('#contactSent').modal('show')
       // $('#contactUs')[0].reset()
-      })
+      //})
 
-      const endContact = document.querySelector("#sendThank")
-      endContact.addEventListener('click', function(e){
-        document.getElementById('#contactUs').reset()
-      })
+      // const endContact = document.querySelector("#sendThank")
+      // endContact.addEventListener('click', function(e){
+      //   document.getElementById('#contactUs').reset()
+      // })
       // const myUrl = "contact.php"
       // const xContact = new XMLHttpRequest()
       // xContact.open("POST", myUrl, true)

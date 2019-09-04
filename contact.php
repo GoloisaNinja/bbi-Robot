@@ -48,7 +48,7 @@
         </p>
         <p>
         <?php
-        echo $body; 
+        echo $body;
          ?>
        </p>
         </div>
@@ -98,7 +98,7 @@
       </div>
       </div>
       <br>
-      <button type="submit" id="contactSubmit" class="btn btn-danger">Send the Badness</button>
+      <button type="button" onclick="contactFunc()" id="contactSubmit" class="btn btn-danger">Send the Badness</button>
       </form>
 
 </div>
