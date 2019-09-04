@@ -10,7 +10,7 @@
  $body .= "Category: ".$catBad."\n";
  $body .= "Tags: ".$catTag."\n";
  $body .= "Idea: ".$badIdea."\n";
- 
+
  $recip = "holidayninjastaff@gmail.com";
  $subject = "Bad Business Idea Submission";
  $mailHeader = "From: " . $email . "\r\n";
@@ -53,6 +53,10 @@
         </p>
         <p>
         <?php
+        if (isset($name))
+        {
+          echo $name
+        }
         echo $body;
          ?>
        </p>
