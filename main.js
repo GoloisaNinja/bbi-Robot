@@ -123,7 +123,19 @@ const badBusinessIdeaArray = [{
   tags: 'fruit, roll, up, ups, fruit roll ups, collar, collars, shirt, shirts, clothing, dry cleaning, cleaning, febreeze, treats, sweets, candy, food, franchise, business, profits, profit',
   level: 3,
   goal: 'personal financial gain'
-}]                             
+},
+{
+  idea: 'Carrying a gun can be inconvenient.  They are bulky and heavy...at least the cool ones are.  Download the Mobile Gun App!  With the convenience of Uber (think Uber Eats), you can now get a fully loaded gun delivered to you at any location at any time.  You are only charged based on usage, time of possession and potential surge up charges (think riots).  When done, just leave the gun at any Bird Scooter Charging station.',
+  tags: 'trucking, logistics, sharknado, uber, bird, scooter, rampage, gun, guns, fully loaded, make my day, dirty harry, clint eastwood, convenience, time of possession',
+  level: 3,
+  goal: 'innovation, making friends'
+},
+{
+  idea: 'Rename a Felon!  Tired of paying to rename stupid stuff like stars and celestial objects after loved ones?  Now you can pay to legally rename felons after your worst enemies!  For an extra "Cambridge Analytica" fee, any future crimes your renamed felon commits can be boosted using advanced search engine optimization and facebook saturation ads.',
+  tags: 'felon, felons, crime, jail, enemy, enemies, stars, celestial objects, moon, sun, planet, planets, legal, legally, rename, facebook, cambridge analytica, fee, extra fee, fees, upcharges, worst enemy, worst enemies, search engine, optimization',
+  level: 3,
+  goal: 'being a better person, innovation, personal financial gain'
+}]                            
 
 console.log(badBusinessIdeaArray[2].idea);
 
