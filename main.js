@@ -237,8 +237,8 @@ const pageCheck = function(){
       console.log(pBad);
       console.log(arrayDecision);
       
-      const arrayMatch = `So here\'s the deal ${spName}, you entered ${cleanTag} as your trigger word and I actually matched you a Bad Business Idea! You should probably be ashamed. \n\n `
-      const arrayNoMatch = `So ${spName}, you entered ${cleanTag} as your trigger word.  I couldn\'t match you a Bad Business Idea based on ${cleanTag}. It\'s a weird word. Maybe use the contact us page to submit a BBI and be sure to base it around ${cleanTag}. Please enjoy this random bad business idea! \n\n `
+      const arrayMatch = `So here\'s the deal ${spName}, you entered ${cleanTag} as your trigger word and I actually matched you a Bad Business Idea! You should probably be ashamed.  `
+      const arrayNoMatch = `So ${spName}, you entered ${cleanTag} as your trigger word.  I couldn\'t match you a Bad Business Idea based on ${cleanTag}. It\'s a weird word. Maybe use the contact us page to submit a BBI and be sure to base it around ${cleanTag}. Please enjoy this random bad business idea! `
 
       const arrayDecLength = arrayDecision.length
       const arrayDecLength2 = arrayDecision.length - 1
@@ -246,9 +246,9 @@ const pageCheck = function(){
       if (arrayDecLength === 1) {
         pBadTag = arrayMatch + arrayDecision[0]
       } else if (arrayDecLength > 1) {
-        pBadTag = arrayMatch + arrayDecision[Math.floor(Math.random() * arrayDecLength2)]
+        pBadTag = arrayMatch + "\n" + "\n" + arrayDecision[Math.floor(Math.random() * arrayDecLength2)]
       } else {
-        pBadTag = arrayNoMatch + pBad.idea
+        pBadTag = arrayNoMatch + "\n" + "\n" + pBad.idea
       }
 
       const mashUp = `So, your name is ${spName}.  That is ${pName} And let\'s see here.  As your current business you selected ${spBus} ${pJob} Your general feeling comment was ${secspYrs}. You indicated a time constraint of ${spYrs}. ${pYrs} The first word that came to your head was ${spFreud}. I mean really? ${pFreud} Lastly, the business goal you selected was ${spAtt}. ${pGoal} Your Bad Business Idea is now just a click away. `
