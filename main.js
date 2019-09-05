@@ -311,9 +311,8 @@ const pageCheck = function(){
         return false
       }
 
-      const submitCon = document.querySelector('#contactUs')
-      submitCon.addEventListener('submit', function(e){
-        e.preventDefault()
+      const submitCon = document.querySelector('#contactSubmit')
+      submitCon.addEventListener('click', function(e){
         contactFunc()
       })
 
