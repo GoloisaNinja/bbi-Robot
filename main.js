@@ -244,11 +244,14 @@ const pageCheck = function(){
       const arrayDecLength2 = arrayDecision.length - 1
 
       if (arrayDecLength === 1) {
-        pBadTag = arrayMatch + "\n" + "\n" + arrayDecision[0]
+        pBadTag = arrayDecision[0]
+        document.querySelector('#arraySaying').textContent = arrayMatch 
       } else if (arrayDecLength > 1) {
-        pBadTag = arrayMatch + "\n" + "\n" + arrayDecision[Math.floor(Math.random() * arrayDecLength2)]
+        document.querySelector('#arraySaying').textContent = arrayMatch 
+        pBadTag = arrayDecision[Math.floor(Math.random() * arrayDecLength2)]
       } else {
-        pBadTag = arrayNoMatch + "\n" + "\n" + pBad.idea
+        document.querySelector('#arraySaying').textContent = arrayNoMatch 
+        pBadTag = pBad.idea
       }
 
       const mashUp = `So, your name is ${spName}.  That is ${pName} And let\'s see here.  As your current business you selected ${spBus} ${pJob} Your general feeling comment was ${secspYrs}. You indicated a time constraint of ${spYrs}. ${pYrs} The first word that came to your head was ${spFreud}. I mean really? ${pFreud} Lastly, the business goal you selected was ${spAtt}. ${pGoal} Your Bad Business Idea is now just a click away. `
