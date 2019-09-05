@@ -244,7 +244,7 @@ const pageCheck = function(){
       const arrayDecLength2 = arrayDecision.length - 1
 
       if (arrayDecLength === 1) {
-        pBadTag = arrayMatch + arrayDecision[0]
+        pBadTag = arrayMatch + "\n" + "\n" + arrayDecision[0]
       } else if (arrayDecLength > 1) {
         pBadTag = arrayMatch + "\n" + "\n" + arrayDecision[Math.floor(Math.random() * arrayDecLength2)]
       } else {
