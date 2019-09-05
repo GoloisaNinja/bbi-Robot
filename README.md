@@ -48,9 +48,7 @@ Recently added Contact Us page
 
 
 Main Bad Business Idea Collaborators are Jarrett Newby and Marc Craig. Both of whom are instrumental geniuses. 
-
 Bad Business Ideas are a registered trade mark of Jarrett Newby and Newbsanity.
-
 Or if they aren't, they should be.
 
 Site is currently hosted at
