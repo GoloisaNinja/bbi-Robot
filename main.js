@@ -305,7 +305,6 @@ const pageCheck = function(){
             success: function(){
               $('#contactSent').modal('show')
               $('#contactUs')[0].reset()
-              document.location.reload(true)
             }
           })
         }
@@ -315,6 +314,10 @@ const pageCheck = function(){
       const submitCon = document.querySelector('#contactSubmit')
       submitCon.addEventListener('click', function(){
         contactFunc()
+      })
+      const submitThank = document.querySelector('#sendThank')
+      submitThank.addEventListener('click', function(){
+        document.location.reload(true)
       })
 
       // const myUrl = "contact.php"

@@ -2,6 +2,7 @@
  $data = json_decode(file_get_contents("php://input"));
  $name = $data->Name;
  $email = $data->Email;
+ $emailTwo = "no-reply@online.com";
  $catBad = $data->Category;
  $catTag = $data->TagList;
  $badIdea = $data->BadBusinessIdea;
@@ -14,7 +15,7 @@
 
  $recip = "holidayninjastaff@gmail.com";
  $subject = "Bad Business Idea Submission";
- $mailHeader = "From: ".$email."\r\n";
+ $mailHeader = "From: ".$emailTwo."\r\n";
  $thank ="Thank you";
 
  mail($recip, $subject, $body, $mailHeader);
