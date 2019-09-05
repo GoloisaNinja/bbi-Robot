@@ -116,7 +116,6 @@
 .modal-body, #badModal, #contactSent{
   background-color: #21242e;
   border-bottom: none;
-  white-space: pre-wrap;
 }
 #hibachiText{
   color: white;
