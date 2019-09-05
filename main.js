@@ -99,7 +99,31 @@ const badBusinessIdeaArray = [{
   tags: 'apocalypse, religion, christ, church, insanity, cable access, wayne\'s world, party time, excellent, bunker, bible, god, jesus, multi level marketing scheme, scheme, private jet, jets, ',
   level: 3,
   goal: 'creating your own religion, personal financial gain'
-}]
+},
+{
+  idea: 'Baby changing robot and diaper catapult 4.0. Using advanced AI technology the robot is able to detect a soiled diaper from up to 100 meters away. With a cutting edge 3rd generation carbon fiber catapult arm, the diapers are launched almost a full kilometer. Improving on version 2.0 and the absolutely disastrous 3.0 model, the 4.0 is now the industry leader with an incredible accidental baby launch rate under 1/10,000!',
+  tags: 'baby, diaper, diapers, catapault, carbon fiber, soiled, easy, AI, technology, convenience, ease of use, internet of things, kilometer, meter, meters, cutting edge, babies, safety, not safe, disaster',
+  level: 3,
+  goal: 'personal financial gain, innovation'
+},
+{
+  idea: 'Mercury based finger paints for kids! Watch as your small children light up with amazement as they try to make our mercury based finger paints soak into the canvas. Cleanup is a breeze. When you are done, just rinse the mercury down the sink! Or use it to fill a glass tube and have a new DIY thermometer!',
+  tags: 'mercury, thermometer, children, paint, painting, paints, art, artistic, poison, death, dying, entertainment, canvas, kids, activities for kids, pollution',
+  level: 3,
+  goal: 'innovation, being a better person'
+},
+{
+  idea: 'Franchise of Ninja Donut Shops. Employ only Ninjas. The only currency accepted is death.  You have to kill a Ninja to get your donut.  If you fail, the Ninja eats your donut over your mutilated corpse.  Ninja Donut Shop is now the sole heir to the deceased estate.  Make sure you swap out the Ninjas after they have gotten fat by eating the all donuts of their dead victims, otherwise profits could suffer.',
+  tags: 'ninja, ninjas, donut, donuts, donut shop, death, currency, murder, estate planning, franchise, restaurant, restaurants, franchises, estate, heir, heirs, failure',
+  level: 3,
+  goal: 'personal financial gain, innovation, company profitability'
+},
+{
+  idea: 'Design shirts with fruit roll ups for collars. Long meeting? Pop your collar like a boss and eat like a 12 year old King. Replacement collars cost twice as much as the actual shirt, but are literally just a package of fruit roll ups, so profit margins are huge. Being machine washable is lame, these shirts are Fruit Dry Cleaning ONLY!  You own and operate the only Fruit Dry Cleaning Shop in the State.  You don\'t actually even clean the shirt, you just spritz them with Febreeze.  Advertise that Fruit Dry Cleaning is environmentally conscious.  You\'re not even lying because you use no actual cleaning products.',
+  tags: 'fruit, roll, up, ups, fruit roll ups, collar, collars, shirt, shirts, clothing, dry cleaning, cleaning, febreeze, treats, sweets, candy, food, franchise, business, profits, profit',
+  level: 3,
+  goal: 'personal financial gain'
+}]                             
 
 console.log(badBusinessIdeaArray[2].idea);
 
@@ -212,19 +236,22 @@ const pageCheck = function(){
       console.log(cleanTag);
       console.log(pBad);
       console.log(arrayDecision);
+      
+      const arrayMatch = `So here\'s the deal ${spName}, you entered ${cleanTag} as your trigger word and I actually matched you a Bad Business Idea! You should probably be ashamed.  `
+      const arrayNoMatch = `So ${spName}, you entered ${cleanTag} as your trigger word.  I couldn\'t match you a Bad Business Idea based on ${cleanTag}. It\'s a weird word. Maybe use the contact us page to submit a BBI and be sure to base it around ${cleanTag}. Please enjoy this random bad business idea!  `
 
       const arrayDecLength = arrayDecision.length
       const arrayDecLength2 = arrayDecision.length - 1
 
       if (arrayDecLength === 1) {
-        pBadTag = arrayDecision[0]
+        pBadTag = arrayMatch + arrayDecision[0]
       } else if (arrayDecLength > 1) {
-        pBadTag = arrayDecision[Math.floor(Math.random() * arrayDecLength2)]
+        pBadTag = arrayMatch + arrayDecision[Math.floor(Math.random() * arrayDecLength2)]
       } else {
-        pBadTag = pBad.idea
+        pBadTag = arrayNoMatch + pBad.idea
       }
 
-      const mashUp = `So, your name is ${spName}.  That is ${pName} And let\'s see here.  As your current business you selected ${spBus} ${pJob} The years at business question is unique. It provides me both a time constraint, but more importantly a "general feeling" you have about your business.  Your general feeling comment was ${secspYrs}. This comment has allowed me to breach your fleshy goo spaces and extract business data.  You indicated a time constraint of ${spYrs}. ${pYrs} The first word that came to your head was ${spFreud}. I mean really? ${pFreud} Lastly, the business goal you selected was ${spAtt}. I am going to brutally, robotically honest here. ${pGoal} But all that being said, let us take a look at the customized Bad Business Idea that my robot algorithm, acquired for the low price of 3 human souls, has come up with for you. *begin happy computing noises* `
+      const mashUp = const mashUp = `So, your name is ${spName}.  That is ${pName} And let\'s see here.  As your current business you selected ${spBus} ${pJob} Your general feeling comment was ${secspYrs}. You indicated a time constraint of ${spYrs}. ${pYrs} The first word that came to your head was ${spFreud}. I mean really? ${pFreud} Lastly, the business goal you selected was ${spAtt}. ${pGoal} Your Bad Business Idea is now just a click away. `
 
       document.querySelector('#conclusionsMashup').textContent = mashUp
       document.querySelector('#badBusinessIdea').textContent = pBadTag
