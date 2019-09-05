@@ -312,7 +312,7 @@ const pageCheck = function(){
       }
 
       const submitCon = document.querySelector('#contactSubmit')
-      submitCon.addEventListener('click', function(e){
+      submitCon.addEventListener('click', function(){
         contactFunc()
       })
 
