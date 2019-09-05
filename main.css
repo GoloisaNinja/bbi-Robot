@@ -75,7 +75,9 @@
   background-color: #141414;
   font-weight: bold;
 }
-
+#contactSubmit{
+  cursor: pointer;
+}
 #grenadeFlavoredWater{
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: .25em;
