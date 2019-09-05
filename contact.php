@@ -52,11 +52,6 @@
           Employ your gooey human wish centers that we may add your idea to our robot data tunnels.<br>
           No guarantees meatbag.
         </p>
-        <p>
-        <?php
-        echo $thank
-         ?>
-       </p>
         </div>
 
 
@@ -104,8 +99,8 @@
       </div>
       </div>
       <br>
-      <button type="button" id="contactSubmit" class="btn btn-danger btn-lg">Send the Badness</button>
       </form>
+      <button type="button" id="contactSubmit" class="btn btn-danger btn-lg">Send the Badness</button>
 
 </div>
 
