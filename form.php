@@ -2,7 +2,7 @@
  $data = json_decode(file_get_contents("php://input"));
  $name = $data->Name;
  $email = $data->Email;
- $emailTwo = "no-reply@online.com";
+ $emailTwo = "jack@goloisaninja.online";
  $catBad = $data->Category;
  $catTag = $data->TagList;
  $badIdea = $data->BadBusinessIdea;
