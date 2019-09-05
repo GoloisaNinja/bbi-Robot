@@ -305,6 +305,7 @@ const pageCheck = function(){
             success: function(){
               $('#contactSent').modal('show')
               $('#contactUs')[0].reset()
+              document.location.reload(true)
             }
           })
         }
