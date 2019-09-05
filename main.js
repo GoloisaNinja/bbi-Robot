@@ -135,7 +135,20 @@ const badBusinessIdeaArray = [{
   tags: 'felon, felons, crime, jail, enemy, enemies, stars, celestial objects, moon, sun, planet, planets, legal, legally, rename, facebook, cambridge analytica, fee, extra fee, fees, upcharges, worst enemy, worst enemies, search engine, optimization',
   level: 3,
   goal: 'being a better person, innovation, personal financial gain'
-}]                            
+},
+{
+  idea: 'Have you ever gone to the park only to be blinded by flashes as doting parents do nothing but photograph their stupid babies and children?  Are you sick of it?  Order the MagnaBlast!  The MagnaBlast is an exteremly powerful electromagnet you can carry in your pocket!  Just charge your MagnaBlast for the prescribed 64 hour time frame and you are ready to go!  Flip the power toggle while walking through the park to instantly disable any electronic device within a 40 meter radius with our patented DEMPF (Dangerous Electro Magnetic Pulse Field) technology!  Watch with delight as parents can no longer capture their ugly children doing mundane things.  Left your MagnaBlast at home but need to wipe your hard drives fast?  No worries!!  MagnaBlast can be connected to your home wifi and controlled with our propietary App.  This way you can trigger MagneBlast remotely! Suck that early crime prevention unit! The possibilites and cancer clusters are endless!',
+  tags: 'cancer, magnets, electromagnetic pulse, electromagnetic pulses, emp, kids, babies, stupid parents, parents, annoying, park, parks, parks and rec, technology, camera, cameras, cancer clusters, wifi, hard drives, pocket nuke',
+  level: 3,
+  goal: 'personal financial gain, innovation'
+},
+{
+  idea: 'Are you tired of your married friends always cancelling plans with you because they have kids?  You\'re not alone!  Every day millions of single and lonely losers like yourself get cancelled on because their married kid-riddled friends have kid-riddled excuses.  Start a Surpirse Child Babysitting Service!  Just rent a large window-less cargo van (preferrably from the 1970\'s) and approach your friend\'s kids as they walk home from school.  Offer them candy and puppies to get in your van!  Speed away and drive them to one of thousands of remote Surprise Babysitting facilities and let the fun begin.  The kids will be looked after by a registered full time staff and your friends will now be free to go see that movie!  A blocked phone call (for privacy) will be made to your friend\'s house within the next few hours demanding the fee for (your services) to return their kid(s).  Thanks Surprise Babysitting Service!',
+  tags: 'kidnapping, kids, kid, children, child, baby, babies, babysitting, stood up, cancelled, lame, millenials, kid riddled, excuses, lonely, loser, candy, cargo van, surprise, felony',
+  level: 3,
+  goal: 'making friends, personal financial gain'  
+}]
+                           
 
 console.log(badBusinessIdeaArray[2].idea);
 
