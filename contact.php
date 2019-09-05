@@ -99,7 +99,7 @@
       </div>
       </div>
       <br>
-      <button type="button" id="contactSubmit" class="btn btn-danger btn-lg">Send the Badness</button>
+      <input type="button" id="contactSubmit" class="btn btn-danger btn-lg" value="Send the Badness">
       </form>
     </div>
 
