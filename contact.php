@@ -100,9 +100,10 @@
       </div>
       <br>
       </form>
-      <button type="button" id="contactSubmit" class="btn btn-danger btn-lg">Send the Badness</button>
+      <span></span>
+    </div>
 
-</div>
+  <button type="button" id="contactSubmit" class="btn btn-danger btn-lg">Send the Badness</button>
 
 <div class="modal fade" id="contactSent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
   aria-hidden="true">
