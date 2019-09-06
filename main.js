@@ -147,6 +147,18 @@ const badBusinessIdeaArray = [{
   tags: 'kidnapping, kids, kid, children, child, baby, babies, babysitting, stood up, cancelled, lame, millenials, kid riddled, excuses, lonely, loser, candy, cargo van, surprise, felony',
   level: 3,
   goal: 'making friends, personal financial gain'  
+},
+{
+  idea: 'Do you have a partner?  Do they text you and actually expect responses back, like in a timely fashion?  Are they constantly telling you that you never say nice things?  Just follow your HART!  No not your meaty flesh bag, your HART, Heuristic Automated Response Text!  That\'s right, never again be burdened with actually having to communicate, just let our patented and lifeless/loveless application do it for you!  Enter a few seemingly meaningless data points for the annoying person in your life that texts you all the time, like height, weight, number of times you\'ve considered suicide in their presence, and HART will customize and automate no less than 5 basically normal human responses!  Simply allow our app to read all your texts and online activity and the next time THAT PERSON texts you, a randomized response will be sent within 37 seconds! Just read this testimonial from Trey in New Jersey! "My wife used to nag me when I\'d go fishing and not come home for 7 weeks.  With HART, my phone just automatically told her I\'d been drafted by the CIA to save the world. When I got home, she wasn\'t even there to yell at me, and she\'d even cleaned out our house!  Thanks HART!" - Trey (actual customer)',
+  tags: 'divorce, heuristic, automated, texts, communication, hart, love, husband, wife, partner, AI, robots, app, better life',
+  level: 3,
+  goal: 'being a better person, innovation'
+},
+{
+  idea: 'Take advantage of today\'s extreme athletes and organize a World\'s Toughest Event Event!  Buy stretchy nylon attire and camp out in the whole foods aisles of your local grocery store.  Act like your talking on your phone to your friend, Lazer, about the most ridiculous and extreme event you just signed up for.  Mention that it\'s like a Ninja Warrior Marathon Triathlon Obstical Mudder Navy Seal Endurance Vision Quest.  Scream loudly that no one has ever finished it!  Also yell loudly that signups are at *insert random park location here*.  Act like the call drops and repeat this process for several hours.  Draw a treasure map with no distinct directions or instructions, just write at the bottom that "The markers are EVERYWHERE". Make 600 copies at Kinkos buy $3.00 worth of lanyards (this should be roughly 18,000 lanyards). Set up a table at the location you screamed and charge $500.00 per person for signup. Give them a map and a lanyard (this will add to your legitimacy).  Sell granola and trail mix for $20.00 a bag.  Tell everyone you\'ll see them at the finish line!  Pack up shop and repeat this in the next state over.  Be your own Boss, retire when you want!',
+  tags: 'hoax, race, obstacle course, navy seal, ninja warrior, false advertising, whole foods, lazer, athlete, extreme, stretchy nylon, treasure map',
+  level: 3,
+  goal: 'making friends, personal financial gain'
 }]
                            
 
