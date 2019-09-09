@@ -177,7 +177,13 @@ const badBusinessIdeaArray = [{
   tags: 'transportation, logistics, ride share, uber, dump truck, daycare, kid, bacteria, infection, profits, construction, union, illegal, lying, lie, danger, lawsuit,',
   level: 3,
   goal: 'personal financial gain, innovation'
- }]                         
+ },
+ {
+  idea: 'The Random Office!  Do you know what the downside to office buildings are?  Of course you do.  It\'s the fact that they are stationary and boring.  For centuries we\'ve been made to believe office buildings should have foundations and be safe and stuff. Lies!  How many times have you looked out your office window and seen the same depressing scenery day after day?  Imagine this!!  Drag race office day!!  Have a rickety trailer filled with your employees pulled behind 20,000 lbs of torque and 12,000 horsepower!  HEEELLLOOOOO productivity!  Or, imagine velcro-ing desks to a Falcon Heavy International Space Station resupply Rocket!!  What\'s that Karen?  You love your job again??  I can\'t hear you Todd, did you say you want to work overtime for FREE??  With The Random Office you can offer companies a work environment that changes daily/weekly/monthly!  The only limitation is your imagination (and your liability insurance).  Deluxe packages include a washed up celebrity announcer with bullhorn, red sheet, and cardboard sign for the workplace of the day/week/month reveal (adds pizzazz), gently used vomit bags, and an option to race other Random Offices for Glory!  Imagine a Random Office Race to the bottom of the Mariana Trench!!',
+  tags: 'vomit, random, office, building, lunacy, liability, insurance, international space station, falcon heavy, iss, karen, todd, certain death, mariana trench, race, velcro, rickety, trailer, boring, scenery, drag race',
+  level: 3,
+  goal: 'innovation'
+}]                         
 
 console.log(badBusinessIdeaArray.length);
 
