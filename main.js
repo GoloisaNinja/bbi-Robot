@@ -159,10 +159,22 @@ const badBusinessIdeaArray = [{
   tags: 'hoax, race, obstacle course, navy seal, ninja warrior, false advertising, whole foods, lazer, athlete, extreme, stretchy nylon, treasure map',
   level: 3,
   goal: 'making friends, personal financial gain'
+},
+{
+  idea: 'You\'ve heard of the Flat Earth Society right?  You might even have heard of the Flat Moon Society and Flat Jupiter.  But you know what you haven\'t heard of?  The Flat Asteroid Society.  And you know what that means?  Opportunity! Treasure!  First, found the society. Second, make t-shirts!  Third, THERE IS NO THIRD! NOTHING IS THREE DIMENSIONAL!',
+  tags: 'flat, earth, celestial, moon, star, galaxy, asteroid, space, society',
+  level: 2,
+  goal: 'making friends, personal financial gain'
+},
+{
+  idea: 'Want a Butler but can\'t afford one? Not to mention you don\'t want your crazy lifestyle to be judged or leaked to media outlets.  Feel like the Alzheimers community isn\'t pulling their weight?  Introducing Alzheimers Butlers!!  It\'s an absolute win!  We finally put the forgetful slobs to work AND they\'ll never judge you for eating cereal naked on the toilet BECAUSE they won\'t freaking remember it even happened!  Can\'t pay your Alzheimers Butler this week because you spent all your money on columbian blow?  Don\'t worry about it!  They don\'t even know they have a job!',
+  tags: 'blow, alzheimers, butler, lifestyle, posh, servant, toilet cereal, slavery, exploitation',
+  level: 3,
+  goal: 'personal financial gain'
 }]
                            
 
-console.log(badBusinessIdeaArray[2].idea);
+console.log(badBusinessIdeaArray.length);
 
 const pageCheck = function(){
   if (pageBody.className === "surveyPage") {
