@@ -171,8 +171,13 @@ const badBusinessIdeaArray = [{
   tags: 'blow, alzheimers, butler, lifestyle, posh, servant, toilet cereal, slavery, exploitation',
   level: 3,
   goal: 'personal financial gain'
-}]
-                           
+},
+{
+  idea: 'Launch your own Contruction Immune Uber Service.  Call it D-Uber (Dumptruck-Uber).  Instead of picking people up in your Prius and getting stuck in the multitude of construction nightmares scattered throughout any given city, pick people up in a bonafide construction immune Dump Truck.  Gain access to the hitherto unusable "Truck Entry" points or use the super fun "Truck Lane" you\'ve always dreamt about.  If you get stopped by other construction workers or the Fuzz, just explain that it\'s your first day on the job and you are delivering a State Inspector (point to your fare) to the "Boss".  Throw in a comment about the bad coffee at the last union meeting. You\'ll be waived through instantly!  For extra believe-ability (and profits!), fill your dump truck with dirt and use it as a daycare facility!  Call it Danger Dirks Dirty Day Care!  Just tell the kids to dive really deep in the dirt any time the truck comes to full stop or if they hear talking.  You know, like a game!  It\'ll be fun!  The kids will be exposed to all kinds of new bacteria which will make their microbiomes stronger.  Also, KIDS LOVE GAMES!  Charge extra for the diverse number of gross bacteria you offer.',
+  tags: 'transportation, logistics, ride share, uber, dump truck, daycare, kid, bacteria, infection, profits, construction, union, illegal, lying, lie, danger, lawsuit,',
+  level: 3,
+  goal: 'personal financial gain, innovation'
+ }]                         
 
 console.log(badBusinessIdeaArray.length);
 
