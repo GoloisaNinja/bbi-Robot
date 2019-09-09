@@ -183,6 +183,12 @@ const badBusinessIdeaArray = [{
   tags: 'vomit, random, office, building, lunacy, liability, insurance, international space station, falcon heavy, iss, karen, todd, certain death, mariana trench, race, velcro, rickety, trailer, boring, scenery, drag race',
   level: 3,
   goal: 'innovation'
+},
+{
+  idea: 'Waterboarding Role-Play Game!  Do you love spy shows like Homeland and Jack Ryan but never feel close enough to the action?  Tried to be a spy but didn\'t make it past the psychological profile?  Don\'t Worry!  Now you can feel like a spy in your very own home with the Waterboarding Role-Play Game!  Our kit comes with everything you need to start waterboarding your friends and family!  Kit includes: (1) Towel, (1) Empty gallon jug, (1) Interrogation script, (1) Game board, (1) Six-sided die, (1) Deck of action cards, (6) Pewter game pieces, (6) Espionage secret cards (1) Interrogation make-up kit - be a ruthless warlord or a sadistic siren!  *water not included* Just roll the die and move your game piece on the board towards the "Save the World" square. Take an action card, but watch out for the "Convicted of Espionage" event!  Who will get waterboarded first?? Will they crack and give up their Espionage Secret?? Provides endless fun and variety for hours!  Multiple play modes!  Including the all new Tom Clancy Mode where each die roll is cut in half allowing for more chances of getting caught!  Ages 3 and Up.',
+  tags: 'spy, espionage, water, child, endangerment, illegal, sadistic, thriller, tom clancy, jack ryan, homeland, torture, board, game, die, death, irresponsible, warlord, siren, double agent, secret, agent, lawsuit',
+  level: 3,
+  goal: 'personal financial gain, being a better person'
 }]                         
 
 console.log(badBusinessIdeaArray.length);
