@@ -138,8 +138,8 @@
   white-space: pre-line;
   font-weight: bold;
 }
-[aria-expanded="true"] .fas.fa-angle-right,
-[aria-expanded="false"] .fas.fa-angle-down{
+[aria-expanded="true"] .fas.fa-chevron-down,
+[aria-expanded="false"] .fas.fa-chevron-up{
     display:none;
 }
 .card-header i{
