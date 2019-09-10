@@ -48,11 +48,11 @@
   font-size: .55em;
   text-align: left;
 }
-#accOne:hover, #accTwo:hover, #accThree:hover, #accFour:hover{
+/* #accOne:hover, #accTwo:hover, #accThree:hover, #accFour:hover{
   font-family: 'Open Sans Condensed', sans-serif;
   color: white;
   background-color: #fc2629;
-}
+} */
 #collapseOne, #collapseTwo, #collapseThree, #collapseFour{
   font-family: 'Open Sans Condensed', sans-serif;
   color: white;
