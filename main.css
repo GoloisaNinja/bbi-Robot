@@ -47,7 +47,7 @@ option{
   font-family: 'Open Sans Condensed', sans-serif;
   color: white;
   background-color: #21242e;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: .55em;
   text-align: left;
   text-decoration: none;
@@ -58,11 +58,15 @@ option{
 #collapseOne, #collapseTwo, #collapseThree, #collapseFour{
   font-family: 'Open Sans Condensed', sans-serif;
   color: white;
-  background-color: #141414;
+  background-color: #1f1f1f;
   text-align: left;
 }
 .card{
   background-color: #141414;
+  -webkit-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
 }
 .accordion{
   font-size: 1.08em;
@@ -74,13 +78,16 @@ option{
 .card-body{
   text-align: left;
 }
+#accOne[aria-expanded="true"], #accTwo[aria-expanded="true"], #accThree[aria-expanded="true"], #accFour[aria-expanded="true"]{
+  font-weight: bold;
+}
 [aria-expanded="true"] .fas.fa-chevron-down,
 [aria-expanded="false"] .fas.fa-chevron-up{
     display:none;
 }
 .card-header i{
   position: absolute;
-  right: 13px;
+  right: 25px;
 }
 /* ===========================================================*/
 /* // Modal Tool Kit
