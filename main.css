@@ -1,3 +1,6 @@
+/*=========================================================
+// JumboTron / Background elements / Page Body Font control
+=============================================================*/
 .jumbotron{
 
     background-image: url("https://i.imgur.com/RUEkGW2.jpg");
@@ -14,71 +17,14 @@
   font-family: 'Open Sans Condensed', sans-serif;
   color: white;
 }
-  #cardButtons{
-      font-weight: bold;
-  }
-  #mainLoremP{
-      font-family: 'Open Sans Condensed', sans-serif;
-      color: white;
-      text-align: center;
-  }
-  #hiddenForm{
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: bold;
-    color: white;
-  }
-  body{
-    margin-top: 50px;
-    background-color: #141414;
-  }
-  label{
-    font-weight: bold;
+body{
+  margin-top: 50px;
+  background-color: #141414;
 }
-  option{
-    font-weight: bold;
-  }
-#inputFN4, #inputYrsEmp, #inputBusType4, #inputIdeaImpact, #inputFreud, #inputImpAttrib, #contactFN4, #emailType4, #contactCat, #contactTags, #contactIdeaInput{
+label{
   font-weight: bold;
 }
-#accOne, #accTwo, #accThree, #accFour{
-  font-family: 'Open Sans Condensed', sans-serif;
-  color: white;
-  background-color: #141414;
-  font-weight: bold;
-  font-size: .55em;
-  text-align: left;
-}
-#accOne:hover, #accTwo:hover, #accThree:hover, #accFour:hover{
-    text-decoration: none;
-}
-#accOne, #accTwo, #accThree, #accFour{
-    text-decoration: none;
-}
-  /*font-family: 'Open Sans Condensed', sans-serif;
-  color: white;
-  background-color: #fc2629;
-} */
-#collapseOne, #collapseTwo, #collapseThree, #collapseFour{
-  font-family: 'Open Sans Condensed', sans-serif;
-  color: white;
-  background-color: #21242e;
-  text-align: left;
-}
-.card{
-  background-color: #141414;
-
-}
-.accordion{
-  font-size: 1.08em;
-}
-#cousinBut{
-  font-family: 'Open Sans Condensed', sans-serif;
-  text-align: center;
-  font-weight: bold;
-}
-#turtleBut:hover, #amazeBalls:hover, #iniSurvey:hover, #bbiSubmit:hover, #bbiResult:hover, #drawingSchool:hover, #hibachiLink:hover, #badThank:hover, #sendThank:hover{
-  color: #FC2629!important;
-  background-color: #141414;
+option{
   font-weight: bold;
 }
 #grenadeFlavoredWater{
@@ -93,55 +39,40 @@
 .jumboText2{
   font-size: 1.01em;
 }
-#mashupCont{
-  text-align: center:
+/* ===========================================================*/
+/* Accordion Controls
+===============================================================*/
 
-}
-#conclusionsMashup{
+#accOne, #accTwo, #accThree, #accFour{
+  font-family: 'Open Sans Condensed', sans-serif;
   color: white;
-  text-align: center;
+  background-color: #21242e;
+  font-weight: bold;
+  font-size: .55em;
+  text-align: left;
+  text-decoration: none;
 }
-#bbiButDiv{
-  text-align: center;
+#accOne:hover, #accTwo:hover, #accThree:hover, #accFour:hover{
+  text-decoration: none;
 }
-.imgcontainer{
-  width: 100%;
-  display: block;
-  text-align: center;
+#collapseOne, #collapseTwo, #collapseThree, #collapseFour{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
+  background-color: #141414;
+  text-align: left;
+}
+.card{
+  background-color: #141414;
+}
+.accordion{
+  font-size: 1.08em;
 }
 #headingOne, #headingTwo, #headingThree, #headingFour{
   text-align: left;
+  background-color: #21242e;
 }
 .card-body{
   text-align: left;
-}
-.modal-header{
-  background-color: #141414;
-  border-bottom: none;
-}
-.modal-body, #badModal, #contactSent{
-  background-color: #21242e;
-  border-bottom: none;
-}
-#hibachiText{
-  color: white;
-}
-.modal-footer{
-  border-top: none;
-}
-#redCheck{
-  color: red;
-}
-#mash{
-  text-align: center;
-}
-#contactUs{
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: bold;
-}
-#whiteSpaceModal{
-  white-space: pre-line;
-  font-weight: bold;
 }
 [aria-expanded="true"] .fas.fa-chevron-down,
 [aria-expanded="false"] .fas.fa-chevron-up{
@@ -149,5 +80,77 @@
 }
 .card-header i{
   position: absolute;
-  right: 0px;
+  right: 25px;
+}
+/* ===========================================================*/
+/* // Modal Tool Kit
+ ==============================================================*/
+
+ .imgcontainer{
+   width: 100%;
+   display: block;
+   text-align: center;
+ }
+
+ .modal-header{
+   background-color: #141414;
+   border-bottom: none;
+ }
+ .modal-body, #badModal, #contactSent{
+   background-color: #21242e;
+   border-bottom: none;
+ }
+ #hibachiText{
+   color: white;
+ }
+ .modal-footer{
+   border-top: none;
+ }
+ #whiteSpaceModal{
+   white-space: pre-line;
+   font-weight: bold;
+ }
+/*==============================================================
+// Form Tool Kit
+================================================================*/
+
+#hiddenForm{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  color: white;
+  visibility: hidden;
+}
+#inputFN4, #inputYrsEmp, #inputBusType4, #inputIdeaImpact, #inputFreud, #inputImpAttrib, #contactFN4, #emailType4, #contactCat, #contactTags, #contactIdeaInput{
+  font-weight: bold;
+}
+#mashupCont{
+  text-align: center:
+}
+#conclusionsMashup{
+  color: white;
+  text-align: center;
+}
+mash{
+  text-align: center;
+}
+#contactUs{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+}
+
+/*==========================================================
+// Button Controls
+============================================================*/
+#cousinBut{
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+#turtleBut:hover, #amazeBalls:hover, #iniSurvey:hover, #bbiSubmit:hover, #bbiResult:hover, #drawingSchool:hover, #hibachiLink:hover, #badThank:hover, #sendThank:hover{
+  color: #FC2629!important;
+  background-color: #141414;
+  font-weight: bold;
+}
+#bbiButDiv{
+  text-align: center;
 }
