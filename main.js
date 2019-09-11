@@ -22,7 +22,7 @@ const hateYourNameArray = [
 const hateYourJobArray = [
     'which is just really, really, really, immeasurably sad.',
     'which is uninspired at best.',
-    'which is just really disappointing to your parents no doubt. Oh wait, are they dead?',
+    'which must feel like being the last one to get picked in dodgeball.',
     'which makes me, as a robot, actually happy I\'m not human.',
     'which must make you an absolute hoot at bring your parent to work day (robot sarcasm).',
     'which makes me think you picked your job in kindergarten and just never expanded beyond that point.',
@@ -34,17 +34,17 @@ const laughableYearsArray = [
     'I\'m sorry, but this is giving me robot giggles. ',
     'I\'m frankly surprised you\'ve made it this long. ',
     `If it makes you feel any better, I\'ve been doing this job for roughly ${randNum} days. `,
-    'Honestly, that is an eternity in robot seconds. ',
+    `Honestly, that is an eternity in robot seconds. ${randNum} multiplied by the length of pi to be precise. `,
     'I genuinely find it sad how much time you meatbags spend at work. '
 ]
 
 const freudJudgementArray = [
     'You are an incredibly sick individual. ',
     'Hahahahahahaha, I was thinking the same thing thought buddy. ',
-    'Imma act like this never happened bruh. ',
-    'Really.  I mean really.  That\'s what is in your wrinkly electric meat processor right now? ',
+    'I need to ask if you smell smoke or taste pennies, I believe you to be having a stroke. ',
+    'Seriously?  That\'s what is in your wrinkly electric meat processor right now? ',
     'I find human thoughts to be squishy and weird. Just like your meatsack bodies. ',
-    'I mean. Yeah. You do you. ',
+    'I mean. Yeah. Ok. Sure. You do you. ',
     'I am beginning to think allowing for free text input was a malformed idea. You have polluted my circuitry. ',
     'There are so many things I could say right now. But I will choose not to.  You should learn from my robot restraint. '
 ]
