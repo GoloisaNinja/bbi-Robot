@@ -46,7 +46,7 @@ option{
 #accOne, #accTwo, #accThree, #accFour{
   font-family: 'Open Sans Condensed', sans-serif;
   color: white;
-  background-color: #21242e;
+  background-color: #2b2b2b;
   /* font-weight: bold; */
   font-size: .55em;
   text-align: left;
@@ -66,14 +66,14 @@ option{
   -webkit-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 15px;
+  border-radius: 7px;
 }
 .accordion{
   font-size: 1.08em;
 }
 #headingOne, #headingTwo, #headingThree, #headingFour{
   text-align: left;
-  background-color: #21242e;
+  background-color: #2b2b2b;
 }
 .card-body{
   text-align: left;
