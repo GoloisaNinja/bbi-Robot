@@ -143,6 +143,10 @@ select.customDrop {
          -o-appearance: none;
             appearance: none;
 }
+.far.fa-claret-square-down{
+  color: white;
+  position: absolute;
+}
 .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
   color: white;
   font-weight: bold;

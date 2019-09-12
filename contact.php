@@ -75,7 +75,8 @@
       <div class="form-group col-md-6">
       <label for="contactCat">Catagory of Bad Idea</label>
       <select style='background-color: #2f2f2f;' name="ideaCat" id="contactCat" class="form-control customDrop" required>
-        <option style='background-color: #2f2f2f;' selected>Company Profitablity</option>
+        <option selected disabled>click to choose an option...</option>
+        <option>Company Profitability</option>
         <option>Personal Financial Gain</option>
         <option>Putting a curse on a fellow employee</option>
         <option>Innovation</option>
@@ -145,6 +146,7 @@
 
 <script src="https://code.jquery.com/jquery-3.4.1.js" type="text/javascript"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/1148c1f779.js"></script>
 <script src="main.js"></script>
 
 
