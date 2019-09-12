@@ -133,12 +133,6 @@ option{
   color: #ffffff;
   border-color: #2f2f2f;
 }
-select {
-  background: #2f2f2f;
-}
-option {
-  background: #2f2f2f;
-}
 .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
   color: white;
   font-weight: bold;
