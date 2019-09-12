@@ -75,7 +75,7 @@
       <div class="form-group col-md-6">
       <label for="contactCat">Catagory of Bad Idea</label>
       <select name="ideaCat" id="contactCat" class="form-control" required>
-        <option selected>Company Profitablity</option>
+        <option class="drops" selected>Company Profitablity</option>
         <option>Personal Financial Gain</option>
         <option>Putting a curse on a fellow employee</option>
         <option>Innovation</option>
