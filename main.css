@@ -129,6 +129,19 @@ option{
 }
 #inputFN4, #inputYrsEmp, #inputBusType4, #inputIdeaImpact, #inputFreud, #inputImpAttrib, #contactFN4, #emailType4, #contactCat, #contactTags, #contactIdeaInput{
   font-weight: bold;
+  background-color: #2f2f2f;
+  color: #ffffff;
+  border-color: #2f2f2f;
+}
+.form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: white;
+  font-weight: bold;
+  opacity: 0.6 !important;
+}
+.form-control::-webkit-input-placeholder { /* Mozilla Firefox 19+ */
+  color: white;
+  font-weight: bold;
+  opacity: 0.6 !important;
 }
 #mashupCont{
   text-align: center:

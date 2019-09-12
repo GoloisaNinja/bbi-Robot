@@ -62,13 +62,13 @@
       <div class="form-row">
       <div class="form-group col-md-6">
         <label for="contactFN4">Name</label>
-        <input type="text" class="form-control" name="fName2" id="contactFN4" placeholder="Who dis?" required>
+        <input type="text" class="form-control" name="fName2" id="contactFN4" placeholder="Who are you?" required>
       </div>
       </div>
       <div class="form-row">
       <div class="form-group col-md-6">
         <label for="emailType4">Email Address</label>
-        <input type="email" class="form-control" name="emailType4" id="emailType4" placeholder="despacito@getaBurrito.com" required>
+        <input type="email" class="form-control" name="emailType4" id="emailType4" placeholder="e.g. despacito@getaBurrito.com" required>
       </div>
       </div>
       <div class="form-row">
