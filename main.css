@@ -136,6 +136,13 @@ option{
 .form-control::select {
   background-color: #2f2f2f;
 }
+select.customDrop {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+        -ms-appearance: none;
+         -o-appearance: none;
+            appearance: none;
+}
 .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
   color: white;
   font-weight: bold;
