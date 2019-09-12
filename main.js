@@ -279,7 +279,7 @@ const pageCheck = function(){
 
 
       const pName = hateYourNameArray[Math.floor(Math.random() * hateYourNameArray.length)]
-      const pJob = hateYourJobArray[Math.floor(Math.random() * hateYourJobarray.length)]
+      const pJob = hateYourJobArray[Math.floor(Math.random() * hateYourJobArray.length)]
       const pYrs = laughableYearsArray[Math.floor(Math.random() * laughableYearsArray.length)]
       const pFreud = freudJudgementArray[Math.floor(Math.random() * freudJudgementArray.length)]
       const pGoal = businessGoalJudgement[Math.floor(Math.random() * businessGoalJudgement.length)]
