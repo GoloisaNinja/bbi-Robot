@@ -146,7 +146,7 @@ const badBusinessIdeaArray = [{
   idea: 'Are you tired of your married friends always cancelling plans with you because they have kids?  You\'re not alone!  Every day millions of single and lonely losers like yourself get cancelled on because their married kid-riddled friends have kid-riddled excuses.  Start a Surpirse Child Babysitting Service!  Just rent a large window-less cargo van (preferrably from the 1970\'s) and approach your friend\'s kids as they walk home from school.  Offer them candy and puppies to get in your van!  Speed away and drive them to one of thousands of remote Surprise Babysitting facilities and let the fun begin.  The kids will be looked after by a registered full time staff and your friends will now be free to go see that movie!  A blocked phone call (for privacy) will be made to your friend\'s house within the next few hours demanding the fee for (your services) to return their kid(s).  Thanks Surprise Babysitting Service!',
   tags: 'kidnapping, kids, kid, children, child, baby, babies, babysitting, stood up, cancelled, lame, millenials, kid riddled, excuses, lonely, loser, candy, cargo van, surprise, felony',
   level: 3,
-  goal: 'making friends, personal financial gain'  
+  goal: 'making friends, personal financial gain'
 },
 {
   idea: 'Do you have a partner?  Do they text you and actually expect responses back, like in a timely fashion?  Are they constantly telling you that you never say nice things?  Just follow your HART!  No not your meaty flesh bag, your HART, Heuristic Automated Response Text!  That\'s right, never again be burdened with actually having to communicate, just let our patented and lifeless/loveless application do it for you!  Enter a few seemingly meaningless data points for the annoying person in your life that texts you all the time, like height, weight, number of times you\'ve considered suicide in their presence, and HART will customize and automate no less than 5 basically normal human responses!  Simply allow our app to read all your texts and online activity and the next time THAT PERSON texts you, a randomized response will be sent within 37 seconds! Just read this testimonial from Trey in New Jersey! "My wife used to nag me when I\'d go fishing and not come home for 7 weeks.  With HART, my phone just automatically told her I\'d been drafted by the CIA to save the world. When I got home, she wasn\'t even there to yell at me, and she\'d even cleaned out our house!  Thanks HART!" - Trey (actual customer)',
@@ -189,7 +189,13 @@ const badBusinessIdeaArray = [{
   tags: 'spy, espionage, water, child, endangerment, illegal, sadistic, thriller, tom clancy, jack ryan, homeland, torture, board, game, die, death, irresponsible, warlord, siren, double agent, secret, agent, lawsuit',
   level: 3,
   goal: 'personal financial gain, being a better person'
-}]                         
+},
+{
+  idea: 'Need a good home defense system, but don\'t want to pay the professionals to monitor your home?  I feel you Fam!  Imagine this!  Dynamite insulated walls!  Instead of boring insulation that only keeps your house warm and stuff, fill your walls with massively explosive dynamite instead! Next time a burglar breaks into your house they will get the surprise of their life!  Just make sure your family and small pets have been evacuated and then use any one of our patented "blow points" throuhout the house to start the party (please note a blow point is just an exposed fuse coming out of the wall).  Yell something cool as you jump out the window after ingniting the blow point, like "Yipee Kiyay Normie!".  Then just bathe in glow of your burning home and vanquished enemy.',
+  tags: 'dynamite, expode, explosion, insulation, house, home, dead, death, irresponsible, not safe, felony, murder, burglar, security, ADT, building code violation, violation, revenge',
+  level: 3,
+  goal: 'innovation, company profitablity'
+}]
 
 console.log(badBusinessIdeaArray.length);
 
@@ -302,7 +308,7 @@ const pageCheck = function(){
       console.log(cleanTag);
       console.log(pBad);
       console.log(arrayDecision);
-      
+
       const arrayMatch = `So here\'s the deal ${spName}, you entered ${cleanTag} as your trigger word and I actually matched you a Bad Business Idea! You should probably be ashamed.  `
       const arrayNoMatch = `So ${spName}, you entered ${cleanTag} as your trigger word.  I couldn\'t match you a Bad Business Idea based on ${cleanTag}. It\'s a weird word. Maybe use the contact us page to submit a BBI and be sure to base it around ${cleanTag}. Please enjoy this random bad business idea! `
 
@@ -310,10 +316,10 @@ const pageCheck = function(){
       const arrayDecLength2 = arrayDecision.length - 1
 
       if (arrayDecLength === 1) {
-        pBadTag = arrayMatch + "\n" + "\n" + arrayDecision[0] 
+        pBadTag = arrayMatch + "\n" + "\n" + arrayDecision[0]
       } else if (arrayDecLength > 1) {
         pBadTag = arrayMatch + "\n" + "\n" + arrayDecision[Math.floor(Math.random() * arrayDecLength)]
-      } else { 
+      } else {
         pBadTag = arrayNoMatch + "\n" + "\n" + pBad.idea
       }
 
