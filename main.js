@@ -210,7 +210,7 @@ const pageCheck = function(){
     })
 
     const randBusArrayLength = randBusinessGoal.length - 1
-    const contingencyRan = randBusinessGoal[Math.floor(Math.random() * randBusArrayLength)]
+    const contingencyRan = randBusinessGoal[Math.floor(Math.random() * randBusinessGoal.length)]
 
     surveyForm.addEventListener('submit', function(e){
       if (e.target.elements.inputImpAttrib.value === "Random") {
@@ -278,13 +278,13 @@ const pageCheck = function(){
       const badBusLength = badBusinessIdeaArray.length - 1
 
 
-      const pName = hateYourNameArray[Math.floor(Math.random() * nameArrayLength)]
-      const pJob = hateYourJobArray[Math.floor(Math.random() * jobArrayLength)]
-      const pYrs = laughableYearsArray[Math.floor(Math.random() * laughYrsLength)]
-      const pFreud = freudJudgementArray[Math.floor(Math.random() * freudLength)]
-      const pGoal = businessGoalJudgement[Math.floor(Math.random() * busGoalLength)]
+      const pName = hateYourNameArray[Math.floor(Math.random() * hateYourNameArray.length)]
+      const pJob = hateYourJobArray[Math.floor(Math.random() * hateYourJobArray.length)]
+      const pYrs = laughableYearsArray[Math.floor(Math.random() * laughableYearsArray.length)]
+      const pFreud = freudJudgementArray[Math.floor(Math.random() * freudJudgementArray.length)]
+      const pGoal = businessGoalJudgement[Math.floor(Math.random() * businessGoalJudgement.length)]
 
-      const pBad = badBusinessIdeaArray[Math.floor(Math.random() * badBusLength)]
+      const pBad = badBusinessIdeaArray[Math.floor(Math.random() * badBusinessIdeaArray.length)]
       let pBadTag = ''
       let arrayDecision = []
       const cleanTag = localStorage.getItem('Freud Clean').toLowerCase().trim()
@@ -312,7 +312,7 @@ const pageCheck = function(){
       if (arrayDecLength === 1) {
         pBadTag = arrayMatch + "\n" + "\n" + arrayDecision[0] 
       } else if (arrayDecLength > 1) {
-        pBadTag = arrayMatch + "\n" + "\n" + arrayDecision[Math.floor(Math.random() * arrayDecLength2)]
+        pBadTag = arrayMatch + "\n" + "\n" + arrayDecision[Math.floor(Math.random() * arrayDecLength)]
       } else { 
         pBadTag = arrayNoMatch + "\n" + "\n" + pBad.idea
       }

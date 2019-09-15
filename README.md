@@ -32,11 +32,11 @@ Javascript will contain a vast array of Bad Business Ideas, ex. Make Dinosaur Is
 
 Main welcome page
 
-![Image of BBI Welcome page](https://i.imgur.com/IsMxYzt.jpg)
+![Image of BBI Welcome page](https://i.imgur.com/peZouE7.jpg)
 
 User input page used to initiate the robots
 
-![Image of user input screen](https://i.imgur.com/2M1Wql0.jpg)
+![Image of user input screen](https://i.imgur.com/vijENrq.jpg)
 
 Return of Bad Business Idea
 
@@ -44,7 +44,7 @@ Return of Bad Business Idea
 
 Recently added Contact Us page
 
-![Contact Page](https://i.imgur.com/5ELvcSQ.jpg)
+![Contact Page](https://i.imgur.com/xm2RkDO.jpg)
 
 
 Main Bad Business Idea Collaborators are Jarrett Newby and Marc Craig. Both of whom are instrumental geniuses. 
