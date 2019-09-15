@@ -14,7 +14,7 @@
   background-size: cover;
 }
 .resultsPage, .mainPageBody, .surveyPage, .contactPageBody{
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Khand', sans-serif;
   color: white;
 }
 body{
@@ -28,7 +28,7 @@ option{
   font-weight: bold;
 }
 #grenadeFlavoredWater{
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Khand', sans-serif;
   font-size: .25em;
   color: white;
   text-align: center;
@@ -44,7 +44,7 @@ option{
 ===============================================================*/
 
 #accOne, #accTwo, #accThree, #accFour{
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Khand', sans-serif;
   color: white;
   background-color: #2b2b2b;
   /* font-weight: bold; */
@@ -56,10 +56,11 @@ option{
   text-decoration: none;
 }
 #collapseOne, #collapseTwo, #collapseThree, #collapseFour{
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Khand', sans-serif;
   color: white;
   background-color: #1f1f1f;
   text-align: left;
+  font-weight: medium;
 }
 .card{
   background-color: #141414;
@@ -122,7 +123,7 @@ option{
 ================================================================*/
 
 #hiddenForm{
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Khand', sans-serif;
   font-weight: bold;
   color: white;
   visibility: hidden;
@@ -168,7 +169,7 @@ select.customDrop {
   text-align: center;
 }
 #contactUs{
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Khand', sans-serif;
   font-weight: bold;
 }
 
@@ -176,7 +177,7 @@ select.customDrop {
 // Button Controls
 ============================================================*/
 #cousinBut{
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Khand', sans-serif;
   text-align: center;
   font-weight: bold;
 }
