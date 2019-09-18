@@ -2,6 +2,43 @@ let surveyName = ''
 let pageBody = document.querySelector('body')
 let randNum = Math.floor(Math.random() * 1001)
 
+const randomBulletList = [
+    'Harness untold energy',
+    'Get more dates',
+    'Live longer',
+    'Become a captain of industry and boats',
+    'Show everyone you are better and smarter than them',
+    `Increase your metabolism by ${randNum} percent`,
+    `Look ${randNum} years younger`,
+    'Become taller and more attractive by normie standards',
+    `Use less carbon by a factor of ${randNum}`,
+    'Live long and prosper more prosperously',
+    'Eat fewer carbs but not even notice',
+    'Enjoy life more and smell better',
+    'Get better seats at large sold out events',
+    'Have smoother softer skin',
+    'Be able to suddenly divide by zero',
+    'Learn the future and go back in time',
+    'Get a real life Lightsaber mailed to you',
+    'Sleep better at night and wake up without aches',
+    'Be able cook more than just hotdogs',
+    'Inspire books to be written about your greatness',
+    'Star in a soda commercial',
+    'Invent a USB plug that is both a spark plug and a drain plug',
+    'Probably solve climate change',
+    `Increase human technological advancement by ${randNum} years`,
+    'Get a dinosaur as a pet',
+    'Meet the stars of the Marvel Universe, but not because you are dying',
+    'Be able to do one arm pushups without arms',
+    'Be able to sell Ebay on Ebay to Ebay',
+    'Cry less and have shiny hair',
+    'Be loved by puppies and get to pet them',
+    'Never get a speeding ticket again',
+    'Suddenly be able to hear colors',
+    'Have more net worth than Napoleon had Dynamite',
+    'Find true love and cookies in your pockets'
+]
+
 const randomQuickName = [
     'Random Pants',
     'Impatient Random Person whose data I have not collected',
@@ -354,6 +391,24 @@ const pageCheck = function(){
 
   } else if (pageBody.className === 'mainPageBody') {
       let pBadTag = ''
+      let bulletArray = []
+
+      const generateBullets = function(){
+        for (var i = 0; i < 3; i++) {
+          let el = getRandom(randomBulletList)
+            while (bulletArray.includes(el)) {
+              el = getRandom(randomBulletList)
+            }
+          bulletArray.push(el)
+        }
+      }
+      generateBullets()
+      console.log(bulletArray);
+
+      document.querySelector('#liOne').innerHTML = bulletArray[0]
+      document.querySelector('#liTwo').innerHTML = bulletArray[1]
+      document.querySelector('#liThree').innerHTML = bulletArray[2]
+
       const instaForm = document.querySelector('#instaForm')
       const instaClose = document.querySelector('#instaClose')
       const instaDismiss = document.querySelector('#instaDismiss')
@@ -380,7 +435,7 @@ const pageCheck = function(){
           location.reload()
         }
       })
-
+      
 // RESULTS HTML - GATHERS LOCAL STORAGE - ASSIGNS VARS - RUNS QUANTUM FUNC
 // ==========================================================================================
 
