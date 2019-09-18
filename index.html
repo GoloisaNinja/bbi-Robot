@@ -33,7 +33,7 @@
 
 
       <!-- <div class="container"> -->
-        <div class="jumbotron">
+      <div class="jumbotron">
         <h1 class="display-4">Welcome to the BBI Initiative</h1>
         <p class="lead">Supplying world class ideas at the speed of business.</p>
         <hr class="my-4">
@@ -44,10 +44,20 @@
           <li>Become a captain of industry and boats</li>
           <li>Show everyone you are better and smarter than them</li>
         </ul>
-        <p class="jumboText">Business and technology are changing the landscape of how we live. Whether it's bleeding edge or leading edge, BBI can help you jumpstart your vision of the future.</p>
-
-        <a class="text-white btn btn-danger btn-lg" id="amazeBalls" href="learnMore.html" role="button">Be Amaze Balls</a>
+        <div class="row">
+          <div class="col-12">
+            <p class="jumboText">Business and technology are changing the landscape of how we live. Whether it's bleeding edge or leading edge, BBI can help you jumpstart your vision of the future.</p>
+            <a class="text-white btn btn-danger btn-lg" id="amazeBalls" href="learnMore.html" role="button">BBI Hardcore</a>
+          </div>
         </div>
+        <br>
+        <div class="row">
+          <div class="col-12">
+            <p class="jumboText">I need a Bad Business Idea now!  I just bought a yacht I can't afford and a shiny fast car I can't even drive!  I need your genius immediately!</p>
+            <button class="text-white btn btn-danger btn-lg" data-toggle="modal" data-target="#instaModal" id="instaAwesome">Insta-Awesome</button>
+          </div>
+        </div>
+      </div>
 
 
       <!-- <div id="mainLoremP" class="container">
@@ -183,6 +193,36 @@
         </div>
       </div>
       <!--Modal: modalRelatedContent-->
+
+      <div class="modal fade" id="instaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-success" role="document">
+          <!--Content-->
+          <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header">
+              <p class="heading lead">The Robots have acknowledged your panic!</p>
+
+              <button type="button" id="instaClose" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" class="white-text">&times;</span>
+              </button>
+            </div>
+
+            <!--Body-->
+            <div id="whiteSpaceModal" class="modal-body">
+              <p id="instaP">Just give us one trigger word to work with...</p>
+              <form id="instaForm">
+              <input id="instaInput" class="form-control" type="text" placeholder="e.g. pocket nuke" required></input>
+            </div>
+            <div class="modal-footer justify-content-center" id="badModal">
+              <button type="submit" for="instaInput" class="btn btn-danger btn-md" id="instaSub">Fetch Genius</button>
+            </form>
+              <button type="button" class="btn btn-danger btn-md" data-dismiss="modal" id="instaDismiss">Dismiss</button>
+            </div>
+          </div>
+          <!--/.Content-->
+        </div>
+      </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.js" type="text/javascript"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>

@@ -99,7 +99,6 @@ option{
    display: block;
    text-align: center;
  }
-
  .modal-header{
    background-color: #141414;
    border-bottom: none;
@@ -111,12 +110,20 @@ option{
  #hibachiText{
    color: white;
  }
+ a, #hibachiText:hover{
+   text-decoration: none !important;
+   outline: none;
+ }
  .modal-footer{
    border-top: none;
  }
  #whiteSpaceModal{
    white-space: pre-line;
    font-weight: bold;
+ }
+ .close{
+   font-size: 50px;
+   color: white;
  }
 /*==============================================================
 // Form Tool Kit
@@ -128,7 +135,7 @@ option{
   color: white;
   visibility: hidden;
 }
-#inputFN4, #inputYrsEmp, #inputBusType4, #inputIdeaImpact, #inputFreud, #inputImpAttrib, #contactFN4, #emailType4, #contactCat, #contactTags, #contactIdeaInput{
+#inputFN4, #inputYrsEmp, #inputBusType4, #inputIdeaImpact, #inputFreud, #inputImpAttrib, #contactFN4, #emailType4, #contactCat, #contactTags, #contactIdeaInput, #instaInput{
   font-weight: bold;
   background-color: #2f2f2f;
   color: #ffffff;

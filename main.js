@@ -2,6 +2,16 @@ let surveyName = ''
 let pageBody = document.querySelector('body')
 let randNum = Math.floor(Math.random() * 1001)
 
+const randomQuickName = [
+    'Random Pants',
+    'Impatient Random Person whose data I have not collected',
+    'Person that couldn\'t wait',
+    'Off the grid too good for surveys Person',
+    'Spends 25 mins in line for coffee but can\'t complete a survey Person',
+    'Used to be cool before you got old and impatient Person',
+    'Probably parks in handicap spots becuase you are that person Person'
+]
+
 const hateYourNameArray = [
     'awful.',
     'boring.',
@@ -196,9 +206,89 @@ const badBusinessIdeaArray = [{
   level: 3,
   goal: 'innovation, company profitablity'
 }]
+// ==============================================================
+// USEFUL GET RANDOM ARRAY FUNCTION - PASS IN ARRAY TO GET OUTPUT
+// ==============================================================
+
+const getRandom = function(arr){
+  return arr[Math.floor(Math.random() * arr.length)]
+}
+
+// ==============================================================
+// QUANTUM BBI FUNCTION - TAKES NAME PARAM AND OUTPUTS VAR pBadTag
+//===============================================================
+
+const quantumBBI = function(name){
+
+  const cleanTag = function(){
+    if (pageBody.className === 'mainPageBody modal-open') {
+      return localStorage.getItem('Quick Tag').toLowerCase().trim()
+    } else {
+      return localStorage.getItem('Freud Clean').toLowerCase().trim()
+    }
+  }
+
+  const pBad = getRandom(badBusinessIdeaArray)
+  let pBadTag = ''
+  let arrayDecision = []
+  let arrayMatch = ''
+  let arrayNoMatch = ''
+  let spName = name
+
+// LOOP ATTEMPTS TO MATCH ARRAY TAGS TO USER INPUT TAG
+// IF TAG MATCH ACROSS MULTIPLE ARRAYS - MATCHES ARE STORED IN arrayDecision[]
+// IF NOT arrayDecision[] WILL BE EMPTY BY DESIGN
+
+  for (var i = 0; i < badBusinessIdeaArray.length; i++) {
+    let modTags = badBusinessIdeaArray[i].tags.split(",")
+    console.log(modTags);
+    for (var z = 0; z < modTags.length; z++) {
+      if (modTags[z].includes(cleanTag())) {
+        arrayDecision.push(badBusinessIdeaArray[i].idea)
+      }
+    }
+  }
+
+// LOGS TO TEST OUTPUTS AND VARIABLES
+
+  console.log(cleanTag());
+  console.log(pBad);
+  console.log(arrayDecision);
+
+// BASED ON PAGE BODY MODAL CLASS NAME - A RANDOMIZED OUTPUT IS GENERATED
+
+  if (pageBody.className === 'mainPageBody modal-open') {
+    arrayMatch = `So here\'s the deal ${getRandom(randomQuickName)}, you entered ${cleanTag()} as your trigger word and I actually matched you a Bad Business Idea! You should probably be ashamed.  `
+    arrayNoMatch = `So ${getRandom(randomQuickName)}, you entered ${cleanTag()} as your trigger word.  I couldn\'t match you a Bad Business Idea based on ${cleanTag()}. It\'s a weird word. Maybe use the contact us page to submit a BBI and be sure to base it around ${cleanTag()}. Please enjoy this random bad business idea! `
+  } else {
+    arrayMatch = `So here\'s the deal ${spName}, you entered ${cleanTag()} as your trigger word and I actually matched you a Bad Business Idea! You should probably be ashamed.  `
+    arrayNoMatch = `So ${spName}, you entered ${cleanTag()} as your trigger word.  I couldn\'t match you a Bad Business Idea based on ${cleanTag()}. It\'s a weird word. Maybe use the contact us page to submit a BBI and be sure to base it around ${cleanTag()}. Please enjoy this random bad business idea! `
+  }
+
+  // DEPENDING IF arrayDecision[] IS BLANK OR NOT - pBadTag IS GENERATED AND RETURNED FOR OUTPUT
+
+  if (arrayDecision.length === 1) {
+    pBadTag = arrayMatch + "\n" + "\n" + arrayDecision[0]
+    return pBadTag
+  } else if (arrayDecision.length > 1) {
+    pBadTag = arrayMatch + "\n" + "\n" + getRandom(arrayDecision)
+    return pBadTag
+  } else {
+    pBadTag = arrayNoMatch + "\n" + "\n" + pBad.idea
+    return pBadTag
+  }
+}
+
+// LOG TO SEE ARRAY LENGTH OF BAD BUSINESS ARRAY
 
 console.log(badBusinessIdeaArray.length);
 
+// =================================================================================================
+// MAIN FUNCTION - CHECKS USER PAGE POSITION - EXECUTES VARIABLE ASSIGNMENTS AND QUANTUM FUNCTIONS
+// =================================================================================================
+
+// LEARNMORE HTML PAGE - STORAGE IS CLARED - VAR ASSIGNS AND FUNCTIONS
+//======================================================================
 const pageCheck = function(){
   if (pageBody.className === "surveyPage") {
     localStorage.clear()
@@ -206,6 +296,8 @@ const pageCheck = function(){
     const mainHidden = document.querySelector('#hiddenForm')
     const surveyForm = document.querySelector('#bbiQuestions')
     mainHidden.style.visibility = 'hidden'
+
+// HIDDEN FORM FUNCTION - SHIFTS FROM HIDDEN TO VISIBLE IF CLICKED
 
     mainSurveyButton.addEventListener('click', function(e){
       if (mainHidden.style.visibility === 'hidden') {
@@ -215,12 +307,11 @@ const pageCheck = function(){
       }
     })
 
-    const randBusArrayLength = randBusinessGoal.length - 1
-    const contingencyRan = randBusinessGoal[Math.floor(Math.random() * randBusinessGoal.length)]
+// MAIN FORM SUBMIT - GATHERS DATA TO LOCAL STORAGE AND SETS KEY/VALUE
 
     surveyForm.addEventListener('submit', function(e){
       if (e.target.elements.inputImpAttrib.value === "Random") {
-        e.target.elements.inputImpAttrib.value = contingencyRan
+        e.target.elements.inputImpAttrib.value = getRandom(randBusinessGoal)
       }
       surveyName = 'First Name: ' + e.target.elements.fName.value
       busType = 'Current Business: ' + e.target.elements.inputBusType4.value
@@ -242,9 +333,39 @@ const pageCheck = function(){
       localStorage.setItem('Freud Clean', freudGoClean)
       localStorage.setItem('Bus Attribute', busAttrib)
       localStorage.setItem('Bus Attribute Clean', busAttribClean)
-
-
     })
+
+// INDEX HTML - ASSIGNS VARS AND FUNCTIONS
+// =========================================================================================
+
+  } else if (pageBody.className === 'mainPageBody') {
+      let pBadTag = ''
+      const instaForm = document.querySelector('#instaForm')
+      const instaClose = document.querySelector('#instaClose')
+      const instaDismiss = document.querySelector('#instaDismiss')
+      instaForm.addEventListener('submit', function(e){
+        e.preventDefault()
+        localStorage.setItem('Quick Tag', e.target.elements.instaInput.value)
+        pBadTag = quantumBBI()
+        document.getElementById('instaForm').reset()
+        document.getElementById('instaInput').remove()
+        document.getElementById('instaSub').remove()
+        document.getElementById('instaP').textContent = pBadTag
+      })
+      instaClose.addEventListener('click', function(e){
+        document.getElementById('instaForm').reset()
+        localStorage.clear()
+        location.reload()
+      })
+      instaDismiss.addEventListener('click', function(e){
+        document.getElementById('instaForm').reset()
+        localStorage.clear()
+        location.reload()
+      })
+
+// RESULTS HTML - GATHERS LOCAL STORAGE - ASSIGNS VARS - RUNS QUANTUM FUNC
+// ==========================================================================================
+
   } else if (pageBody.className === "resultsPage") {
       const listName = localStorage.getItem('First Name')
       const listBusType = localStorage.getItem('Business Type')
@@ -261,12 +382,16 @@ const pageCheck = function(){
 
       const seps = ['-', ':']
 
+// CLEAN UP OF USER INPUT RESPONSES FOR USE IN MASHUP
+
       let spName = listName.split(":")
       let spBus = listBusType.split(":")
       let spYrs = listTenure.split(":")
       let secspYrs = listTenure.split(":")
       let spFreud = listFreud.split(":")
       let spAtt = listBusAtrrib.split(":")
+
+// MORE CLEAN UP
 
       spName = spName[1]
       spBus = spBus[1]
@@ -275,103 +400,31 @@ const pageCheck = function(){
       spFreud = spFreud[1]
       spAtt = spAtt[1]
 
-      const nameArrayLength = hateYourNameArray.length - 1
-      const jobArrayLength = hateYourJobArray.length - 1
-      const laughYrsLength = laughableYearsArray.length - 1
-      const freudLength = freudJudgementArray.length - 1
-      const busGoalLength = businessGoalJudgement.length - 1
+// WITTY ARRAY JUDGEMENTS FOR MASHUP
 
-      const badBusLength = badBusinessIdeaArray.length - 1
+      const pName = getRandom(hateYourNameArray)
+      const pJob = getRandom(hateYourJobArray)
+      const pYrs = getRandom(laughableYearsArray)
+      const pFreud = getRandom(freudJudgementArray)
+      const pGoal = getRandom(businessGoalJudgement)
 
-
-      const pName = hateYourNameArray[Math.floor(Math.random() * hateYourNameArray.length)]
-      const pJob = hateYourJobArray[Math.floor(Math.random() * hateYourJobArray.length)]
-      const pYrs = laughableYearsArray[Math.floor(Math.random() * laughableYearsArray.length)]
-      const pFreud = freudJudgementArray[Math.floor(Math.random() * freudJudgementArray.length)]
-      const pGoal = businessGoalJudgement[Math.floor(Math.random() * businessGoalJudgement.length)]
-
-      const pBad = badBusinessIdeaArray[Math.floor(Math.random() * badBusinessIdeaArray.length)]
-      let pBadTag = ''
-      let arrayDecision = []
-      const cleanTag = localStorage.getItem('Freud Clean').toLowerCase().trim()
-
-      for (var i = 0; i < badBusinessIdeaArray.length; i++) {
-        let modTags = badBusinessIdeaArray[i].tags.split(",")
-        console.log(modTags);
-        for (var z = 0; z < modTags.length; z++) {
-          if (modTags[z].includes(cleanTag)) {
-            arrayDecision.push(badBusinessIdeaArray[i].idea)
-          }
-        }
-      }
-
-      console.log(cleanTag);
-      console.log(pBad);
-      console.log(arrayDecision);
-
-      const arrayMatch = `So here\'s the deal ${spName}, you entered ${cleanTag} as your trigger word and I actually matched you a Bad Business Idea! You should probably be ashamed.  `
-      const arrayNoMatch = `So ${spName}, you entered ${cleanTag} as your trigger word.  I couldn\'t match you a Bad Business Idea based on ${cleanTag}. It\'s a weird word. Maybe use the contact us page to submit a BBI and be sure to base it around ${cleanTag}. Please enjoy this random bad business idea! `
-
-      const arrayDecLength = arrayDecision.length
-      const arrayDecLength2 = arrayDecision.length - 1
-
-      if (arrayDecLength === 1) {
-        pBadTag = arrayMatch + "\n" + "\n" + arrayDecision[0]
-      } else if (arrayDecLength > 1) {
-        pBadTag = arrayMatch + "\n" + "\n" + arrayDecision[Math.floor(Math.random() * arrayDecLength)]
-      } else {
-        pBadTag = arrayNoMatch + "\n" + "\n" + pBad.idea
-      }
+// MASHUP CREATION FROM ABOVE SECTIONS AND SELECTIONS
 
       const mashUp = `So, your name is ${spName}.  That is ${pName} And let\'s see here.  As your current business you selected ${spBus} ${pJob} Your general feeling comment was ${secspYrs}. You indicated a time constraint of ${spYrs}. ${pYrs} The first word that came to your head was ${spFreud}. I mean really? ${pFreud} Lastly, the business goal you selected was ${spAtt}. ${pGoal} Your Bad Business Idea is now just a click away. `
 
+// MODAL PARAGRAPH FILL AND TEXT ASSIGN
+
+      let pBadTag = quantumBBI(spName)
+
       document.querySelector('#conclusionsMashup').textContent = mashUp
       document.querySelector('#badBusinessIdea').textContent = pBadTag
+
+// CONTACT PHP - COLLECTS INPUTS AND USES AJAX TO POST FOR SERVER COLLECTION
+// ===========================================================================
+
 } else if (pageBody.className === "contactPageBody") {
 
-    // let contactName = document.querySelector('#contactFN4').textContent
-    // let contactEmail = document.querySelector('#emailType4').textContent
-    // let contactCategory = document.querySelector('#contactCat').textContent
-    // let contactTagList = document.querySelector('#contactTags').textContent
-    // let contactIdeaVal = document.querySelector('#contactIdeaInput').textContent
-
-    // let data = {
-    //   Name: contactName,
-    //   Email: contactEmail,
-    //   Category: contactCategory,
-    //   TagList: contactTagList,
-    //   BadBusinessIdea: contactIdeaVal
-    // }
-    // data = JSON.stringify(data)
-    //
-    //
-    // let contactName = ''
-    // let contactEmail = ''
-    // let contactCategory = ''
-    // let contactTagList = ''
-    // let contactIdeaVal = ''
-    //
-    //
-    //
-    // const formData = document.querySelector("#contactUs")
-    // formData.addEventListener('submit', function(e){
-    //   //e.preventDefault()
-    //   contactName = e.target.elements.contactFN4.value
-    //   contactEmail = e.target.elements.emailType4.value
-    //   contactCategory = e.target.elements.contactCat.value
-    //   contactTagList = e.target.elements.contactTags.value
-    //   contactIdeaVal = e.target.elements.contactIdeaInput.value
-
-      // let frmData = {
-      //   Name: contactName,
-      //   Email: contactEmail,
-      //   Category: contactCategory,
-      //   TagList: contactTagList,
-      //   BadBusinessIdea: contactIdeaVal
-      // }
-      // frmData = JSON.stringify(data)
-      //
-      // console.log(frmData);
+// GETS VALUES OF INPUTS
 
       function contactFunc(){
         let contactName = document.querySelector('#contactFN4').value
@@ -379,6 +432,8 @@ const pageCheck = function(){
         let contactCategory = document.querySelector('#contactCat').value
         let contactTagList = document.querySelector('#contactTags').value
         let contactIdeaVal = document.querySelector('#contactIdeaInput').value
+
+// CREATES OBJECT - JSON STRUCTURE
 
         let frmData = {
           Name: contactName,
@@ -388,9 +443,15 @@ const pageCheck = function(){
           BadBusinessIdea: contactIdeaVal
         }
 
+// TURNS JSON OBJECT INTO STRING FOR POST
+
         frmData = JSON.stringify(frmData)
 
+// LOG TEST JSON STRING
+
         console.log(frmData);
+
+// CHECK THAT ALL FIELDS ARE FILLED THEN USE AJAX TO POST TO SERVER - TARGET IS FORM PHP
 
         if (contactName == '' || contactEmail == '' || contactCategory == '' || contactTagList == '' || contactIdeaVal == '') {
           alert('You need to fill out all fields meatbag...')
@@ -410,62 +471,24 @@ const pageCheck = function(){
         return false
       }
 
+// LISTEN FOR FORM SUBMIT
+
       const submitCon = document.querySelector('#contactSubmit')
       submitCon.addEventListener('click', function(){
         contactFunc()
       })
+
+// LISTEN FOR MODAL ACKNOWLEDGE AND REFRESH CONTACT PHP PAGE
+
       const submitThank = document.querySelector('#sendThank')
       submitThank.addEventListener('click', function(){
         document.location.reload(true)
       })
-
-      // const myUrl = "contact.php"
-      // const xContact = new XMLHttpRequest()
-      // xContact.open("POST", myUrl, true)
-      // xContact.setRequestHeader('Content-Type', 'application/json')
-      // xContact.send(data)
-      // $('#contactSent').modal('show')
-
-      // const xhttp = new XMLHttpRequest()
-      //   xhttp.onreadystatechange = function(){
-      //   if (this.readystatechange === 4 && this.status === 200) {
-      //     $('#contactSent').modal('show')
-      //   }
-      // }
-      // xhttp.open('POST', 'contact.php', true)
-      // xhttp.send(data)
-      // $('#contactSent').modal('show')
-      // $('#contactUs')[0].reset()
-      //})
-
-      // const endContact = document.querySelector("#sendThank")
-      // endContact.addEventListener('click', function(e){
-      //   document.getElementById('#contactUs').reset()
-      // })
-      // const myUrl = "contact.php"
-      // const xContact = new XMLHttpRequest()
-      // xContact.open("POST", myUrl, true)
-      // xContact.setRequestHeader('Content-Type', 'application/json')
-      // xContact.send(JSON.stringify({
-      //   Name: contactName,
-      //   Email: contactEmail,
-      //   Category: contactCategory,
-      //   TagList: contactTagList,
-      //   BadBusinessIdea: contactIdeaVal
-      // }))
-
-      // $.post("contact.php", {
-      //   Name: contactName,
-      //   Email: contactEmail,
-      //   Category: contactCategory,
-      //   TagList: contactTagList,
-      //   BadBusinessIdea: contactIdeaVal
-      // })
-
-
-
-
+// ==================== END OF IFS ========================================
   }
-}
+} // ================== END OF PAGE CHECK FUNCTION ========================
+
+// INITIALIZE
+// ========================================================================
 
 pageCheck()
