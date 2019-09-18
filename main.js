@@ -310,6 +310,12 @@ const pageCheck = function(){
 // MAIN FORM SUBMIT - GATHERS DATA TO LOCAL STORAGE AND SETS KEY/VALUE
 
     surveyForm.addEventListener('submit', function(e){
+      e.preventDefault()
+      if (e.target.elements.inputYrsEmp.value === 'click to choose an option...' ||
+      e.target.elements.inputIdeaImpact.value === 'click to choose an option...' ||
+      e.target.elements.inputImpAttrib.value === 'click to choose an option...') {
+        alert('You obviously missed an option Meatbag! Give me your data!')
+      } else {
       if (e.target.elements.inputImpAttrib.value === "Random") {
         e.target.elements.inputImpAttrib.value = getRandom(randBusinessGoal)
       }
@@ -333,6 +339,8 @@ const pageCheck = function(){
       localStorage.setItem('Freud Clean', freudGoClean)
       localStorage.setItem('Bus Attribute', busAttrib)
       localStorage.setItem('Bus Attribute Clean', busAttribClean)
+      window.location = 'results.html'
+      }
     })
 
 // INDEX HTML - ASSIGNS VARS AND FUNCTIONS
