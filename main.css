@@ -196,3 +196,6 @@ select.customDrop {
 #bbiButDiv{
   text-align: center;
 }
+.button-span{
+  width: 275px;
+}
