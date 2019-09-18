@@ -355,12 +355,16 @@ const pageCheck = function(){
       instaClose.addEventListener('click', function(e){
         document.getElementById('instaForm').reset()
         localStorage.clear()
-        location.reload()
+        if (document.getElementById('instaP').innerHTML != 'Just give us one trigger word to work with...') {
+          location.reload()
+        }
       })
       instaDismiss.addEventListener('click', function(e){
         document.getElementById('instaForm').reset()
         localStorage.clear()
-        location.reload()
+        if (document.getElementById('instaP').innerHTML != 'Just give us one trigger word to work with...') {
+          location.reload()
+        }
       })
 
 // RESULTS HTML - GATHERS LOCAL STORAGE - ASSIGNS VARS - RUNS QUANTUM FUNC
