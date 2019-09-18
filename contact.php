@@ -101,7 +101,11 @@
       </div>
       </div>
       <br>
-      <input type="button" id="contactSubmit" class="btn btn-danger btn-lg" value="Send the Badness">
+       <div class="btn-group">
+        <span class="button-span">
+      <input type="button" id="contactSubmit" class="btn btn-danger btn-lg btn-block" value="Send the Badness">
+        </span>
+       </div>
       </form>
     </div>
 
