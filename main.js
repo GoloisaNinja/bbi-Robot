@@ -201,11 +201,17 @@ const badBusinessIdeaArray = [{
   goal: 'personal financial gain, being a better person'
 },
 {
-  idea: 'Need a good home defense system, but don\'t want to pay the professionals to monitor your home?  I feel you Fam!  Imagine this!  Dynamite insulated walls!  Instead of boring insulation that only keeps your house warm and stuff, fill your walls with massively explosive dynamite instead! Next time a burglar breaks into your house they will get the surprise of their life!  Just make sure your family and small pets have been evacuated and then use any one of our patented "blow points" throuhout the house to start the party (please note a blow point is just an exposed fuse coming out of the wall).  Yell something cool as you jump out the window after ingniting the blow point, like "Yipee Kiyay Normie!".  Then just bathe in glow of your burning home and vanquished enemy.',
-  tags: 'dynamite, expode, explosion, insulation, house, home, dead, death, irresponsible, not safe, felony, murder, burglar, security, ADT, building code violation, violation, revenge',
+  idea: 'Need a good home defense system, but don\'t want to pay the professionals to monitor your home?  I feel you Fam!  Imagine this!  Dynamite insulated walls!  Instead of boring insulation that only keeps your house warm and stuff, fill your walls with massively explosive dynamite instead! Next time a burglar breaks into your house they will get the surprise of their life!  Just make sure your family and small pets have been evacuated and then use any one of our patented "blow points" throughout the house to start the party (please note a blow point is just an exposed fuse coming out of the wall, but don\'t worry, it is completely safe!).  Yell something cool as you jump out the window after ingniting the blow point, like "Yipee Kiyay Normie!".  Who needs ADT when you can just bathe in glow of your burning home and vanquished enemy.',
+  tags: 'dynamite, explode, explosion, insulation, house, home, dead, death, irresponsible, not safe, felony, murder, burglar, security, ADT, building code violation, violation, revenge',
   level: 3,
   goal: 'innovation, company profitablity'
-}]
+},
+{  
+  idea: 'The Glockenspiel Sidewalk!  Have you ever thought that sidewalks are sad, miserable and boring?  Have you ever thought that sidewalks should be large metal musically tuned tiles fastened dangerously across two parellel planks of wood?  Of course you haven\'t!  Imagine this!  Develop and manufacture enormous glockenspiel sidewalk panels.  Sell New York City planners on the benefits of citizens frolicking to and fro on your colorful and musical glockenspiel "glidewalks".  Provide fake data around how much happier and less violent people would be!  Use a pie chart without a legend!  No one will notice!  People love shapes!  NYC is just the start.  Pitch idea to cities all over the world.  Build your contract to include ownership of any music created on your "glidewalks".  Become Time Person of the Year/Century.',
+  tags: 'glockenspiel, sidewalk, happy, music, pie chart, pie, data, fake data, tiles, dangerous, frolicking, famous, infamous, rich, powerful, aesthetic, shapes, charts, city planning, infrastructure',
+  level: 2,
+  goal: 'innovation, personal financial gain'
+}]                          
 // ==============================================================
 // USEFUL GET RANDOM ARRAY FUNCTION - PASS IN ARRAY TO GET OUTPUT
 // ==============================================================
