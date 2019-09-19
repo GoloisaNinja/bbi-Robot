@@ -65,7 +65,7 @@ option{
   background-position: top;
 }
 #surveyNav{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url("https://i.imgur.com/RUEkGW2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://i.imgur.com/RUEkGW2.jpg");
   background-position: top;
 }
 /* ===========================================================*/
