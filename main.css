@@ -4,6 +4,8 @@
 .jumbotron{
     background-image: url("https://i.imgur.com/RUEkGW2.jpg");
     background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 #mainJumbo{
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url("https://i.imgur.com/ql80BgQ.jpg");
@@ -65,7 +67,7 @@ option{
   background-position: top;
 }
 #surveyNav{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://i.imgur.com/RUEkGW2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://i.imgur.com/RUEkGW2.jpg");
   background-position: top;
 }
 /* ===========================================================*/
@@ -135,6 +137,7 @@ option{
  .modal-body, #badModal, #contactSent{
    background-color: #21242e;
    border-bottom: none;
+   padding: 10px;
  }
  #hibachiText{
    color: white;
@@ -145,11 +148,16 @@ option{
  }
  .modal-footer{
    border-top: none;
+   padding: 10px;
  }
- #whiteSpaceModal{
+ #instaP, #badBusinessIdea{
    white-space: pre-line;
    font-weight: bold;
+   margin-bottom: 0px;
  }
+#instaForm{
+  margin-top: 15px;
+}
  .close{
    font-size: 50px;
    color: white;
@@ -217,11 +225,11 @@ select.customDrop {
   text-align: center;
   font-weight: bold;
 }
-#turtleBut:hover, #amazeBalls:hover, #iniSurvey:hover, #bbiSubmit:hover, #bbiResult:hover, #drawingSchool:hover, #hibachiLink:hover, #badThank:hover, #sendThank:hover{
+/*#turtleBut:hover, #amazeBalls:hover, #iniSurvey:hover, #bbiSubmit:hover, #bbiResult:hover, #drawingSchool:hover, #hibachiLink:hover, #badThank:hover, #sendThank:hover{
   color: #FC2629!important;
   background-color: #141414;
   font-weight: bold;
-}
+} */
 #bbiButDiv{
   text-align: center;
 }
