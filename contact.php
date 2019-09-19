@@ -28,9 +28,9 @@
     <link rel="stylesheet" href="main.css">
     <title>Contact Us!</title>
 </head>
-  <body class="contactPageBody">
+  <body class="contactPageBody" style="opacity: 0";>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="contacNav">
       <a class="navbar-brand" href="index.html">BBI Initiative</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -47,12 +47,14 @@
     </nav>
 
       <!-- <div class="container"> -->
-        <div class="jumbotron">
+        <div class="jumbotron" id="contactJumbo">
+         <div class="container" id="mainJumCont">
         <h1 class="display-4">Contact Us!</h1>
         <p class="lead">Send us your worst/best Bad Business Ideas!<br>
           Employ your gooey human wish centers that we may add your idea to our robot data tunnels.<br>
           No guarantees meatbag.
         </p>
+         </div>
         </div>
 
 
@@ -152,6 +154,11 @@
 <script src="https://code.jquery.com/jquery-3.4.1.js" type="text/javascript"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/1148c1f779.js"></script>
+<script>
+  $(document).ready(function() {
+   $("body").css('opacity', 1);
+  });
+</script>
 <script src="main.js"></script>
 
 
