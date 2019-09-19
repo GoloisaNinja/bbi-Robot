@@ -134,11 +134,15 @@ option{
    background-color: #141414;
    border-bottom: none;
  }
- .modal-body, #badModal, #contactSent{
+ .modal-body{
    background-color: #21242e;
    border-bottom: none;
    padding: 10px;
  }
+#badModal, #contactSent{
+  background-color: #21242e;
+  border-bottom: none;
+}
  #hibachiText{
    color: white;
  }
@@ -148,7 +152,7 @@ option{
  }
  .modal-footer{
    border-top: none;
-   padding: 10px;
+   padding-bottom: 30px;
  }
  #instaP, #badBusinessIdea{
    white-space: pre-line;
