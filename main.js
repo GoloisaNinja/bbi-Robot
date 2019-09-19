@@ -425,14 +425,14 @@ const pageCheck = function(){
         document.getElementById('instaForm').reset()
         localStorage.clear()
         if (document.getElementById('instaP').innerHTML != 'Just give us one trigger word to work with...') {
-          location.reload()
+          location.reload(false)
         }
       })
       instaDismiss.addEventListener('click', function(e){
         document.getElementById('instaForm').reset()
         localStorage.clear()
         if (document.getElementById('instaP').innerHTML != 'Just give us one trigger word to work with...') {
-          location.reload()
+          location.reload(false)
         }
       })
       
