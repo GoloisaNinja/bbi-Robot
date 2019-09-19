@@ -412,24 +412,26 @@ const pageCheck = function(){
       const instaForm = document.querySelector('#instaForm')
       const instaClose = document.querySelector('#instaClose')
       const instaDismiss = document.querySelector('#instaDismiss')
+      const instaSub = document.querySelector('#instaSub')
+      
       instaForm.addEventListener('submit', function(e){
         e.preventDefault()
         localStorage.setItem('Quick Tag', e.target.elements.instaInput.value)
         pBadTag = quantumBBI()
-        document.getElementById('instaForm').reset()
-        document.getElementById('instaInput').remove()
-        document.getElementById('instaSub').remove()
+        instaForm.reset()
+        insaForm.remove()
+        instaSub.remove()
         document.getElementById('instaP').textContent = pBadTag
       })
+      
       instaClose.addEventListener('click', function(e){
-        document.getElementById('instaForm').reset()
         localStorage.clear()
         if (document.getElementById('instaP').innerHTML != 'Just give us one trigger word to work with...') {
           history.go(0)
         }
       })
+      
       instaDismiss.addEventListener('click', function(e){
-        document.getElementById('instaForm').reset()
         localStorage.clear()
         if (document.getElementById('instaP').innerHTML != 'Just give us one trigger word to work with...') {
           history.go(0)
