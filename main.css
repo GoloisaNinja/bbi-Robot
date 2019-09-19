@@ -2,10 +2,24 @@
 // JumboTron / Background elements / Page Body Font control
 =============================================================*/
 .jumbotron{
-
     background-image: url("https://i.imgur.com/RUEkGW2.jpg");
     background-size: cover;
-  }
+}
+#mainJumbo{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url("https://i.imgur.com/ql80BgQ.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: left;
+}
+#contactJumbo{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url("https://i.imgur.com/1M9Do4s.jpg");
+  background-position: top;
+  background-size: cover;
+  text-align: left;
+}
+#mainJumCont{
+  text-align: left;
+}
 .bg{
   height: 100%;
   background-image: url("https://i.imgur.com/RUEkGW2.jpg");
@@ -41,6 +55,18 @@ option{
 }
 .copywrite{
   margin: 0px;
+}
+.navbar{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url("https://i.imgur.com/ql80BgQ.jpg");
+  background-position: top;
+}
+#contactNav{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url("https://i.imgur.com/1M9Do4s.jpg");
+  background-position: top;
+}
+#surveyNav{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url("https://i.imgur.com/RUEkGW2.jpg");
+  background-position: top;
 }
 /* ===========================================================*/
 /* Accordion Controls
