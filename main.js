@@ -419,7 +419,7 @@ const pageCheck = function(){
         localStorage.setItem('Quick Tag', e.target.elements.instaInput.value)
         pBadTag = quantumBBI()
         instaForm.reset()
-        insaForm.remove()
+        instaForm.remove()
         instaSub.remove()
         document.getElementById('instaP').textContent = pBadTag
       })
