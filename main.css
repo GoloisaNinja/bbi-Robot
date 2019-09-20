@@ -218,11 +218,10 @@ select.customDrop {
 #conclusionsMashup{
   color: white;
   text-align: left;
-  padding-top: 20px;
-  padding-bottom: 0px;
+  padding: 25px;
 }
 #mash{
-  text-align: center;
+  text-align: left;
   padding-bottom: 15px;
 }
 #contactUs{
