@@ -49,6 +49,12 @@ option{
   color: white;
   text-align: center;
 }
+#mashCont{
+  font-size: 1.10em;
+  text-align: left;
+  background-color: #2b2b2b;
+  border-radius: 7px;
+}
 .jumboText{
   font-size: 1.15em;
 }
@@ -63,8 +69,8 @@ option{
   background-position: top;
 }
 #contactNav{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url("https://i.imgur.com/1M9Do4s.jpg");
-  background-position: top;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url("https://imperialstyleguide.com/img/social/imperial-style-guide-social.jpg");
+  background-position: center;
 }
 #surveyNav{
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://i.imgur.com/RUEkGW2.jpg");
@@ -211,10 +217,13 @@ select.customDrop {
 }
 #conclusionsMashup{
   color: white;
-  text-align: center;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 0px;
 }
 #mash{
   text-align: center;
+  padding-bottom: 15px;
 }
 #contactUs{
   font-family: 'Khand', sans-serif;
