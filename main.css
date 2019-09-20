@@ -50,7 +50,7 @@ option{
   text-align: center;
 }
 #mashCont{
-  font-size: 1.10em;
+  font-size: 1.08em;
   text-align: left;
   background-color: #2b2b2b;
   border-radius: 7px;
@@ -234,7 +234,7 @@ select.customDrop {
 ============================================================*/
 #cousinBut{
   font-family: 'Khand', sans-serif;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
 }
 /*#turtleBut:hover, #amazeBalls:hover, #iniSurvey:hover, #bbiSubmit:hover, #bbiResult:hover, #drawingSchool:hover, #hibachiLink:hover, #badThank:hover, #sendThank:hover{

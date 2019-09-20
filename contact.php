@@ -51,7 +51,8 @@
          <div class="container" id="mainJumCont">
         <h1 class="display-4">Contact Us!</h1>
         <p class="lead">Send us your worst/best Bad Business Ideas!<br>
-          Employ your gooey human wish centers that we may add your idea to our robot data tunnels.<br>
+          Employ your gooey human wish centers that<br>
+          we may add your idea to our robot data tunnels.<br>
           Perhaps you will please the Robot King...<br>
           No guarantees meatbag.
         </p>
