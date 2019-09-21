@@ -24,7 +24,7 @@
     <meta charset="utf-8" name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Khand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Geo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <title>Contact Us!</title>
 </head>
@@ -49,7 +49,7 @@
       <!-- <div class="container"> -->
         <div class="jumbotron" id="contactJumbo">
          <div class="container" id="mainJumCont">
-        <h1 class="display-4">Contact Us!</h1>
+        <h1 class="display-4" id="logoLead">BAD [+] CONTACT [+] US</h1>
         <p class="lead">Send us your worst/best Bad Business Ideas!<br>
           Employ your gooey human wish centers that<br>
           we may add your idea to our robot data tunnels.<br>
@@ -81,14 +81,17 @@
       <label for="contactCat">Catagory of Bad Idea</label>
       <select style='background-color: #2f2f2f;' name="ideaCat" id="contactCat" class="form-control customDrop" required>
         <option selected disabled>click to choose an option...</option>
-        <option>Company Profitability</option>
-        <option>Personal Financial Gain</option>
-        <option>Putting a curse on a fellow employee</option>
+        <option>Immoral Company Profitability</option>
+        <option>Ill-gotten Financial Gain</option>
         <option>Innovation</option>
-        <option>Sucking up to the CEO</option>
+        <option>Widespread Panic</option>
+        <option>Unhealthy Side-effects</option>
         <option>Making Friends</option>
-        <option>Being a better Person</option>
+        <option>Losing Friends</option>
         <option>Creating your own Religion</option>
+        <option>Revenge</option>
+        <option>Deliciousness</option>
+       <option>Just sayying hi</option>
       </select>
       </div>
       </div>
