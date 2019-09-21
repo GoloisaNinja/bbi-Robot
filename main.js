@@ -377,6 +377,7 @@ const quantumBBI = function(name){
     return pBadTag
   } else  {
     pBadTag = arrayNoMatch + "\n" + "\n" + pBad.idea
+    return pBadTag
   }
 
 }
