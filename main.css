@@ -22,6 +22,9 @@
 #mainJumCont{
   text-align: left;
 }
+#logoLead{
+  font-family: 'Geo', sans-serif;
+}
 .bg{
   height: 100%;
   background-image: url("https://i.imgur.com/RUEkGW2.jpg");
