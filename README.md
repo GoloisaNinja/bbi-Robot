@@ -32,7 +32,7 @@ Javascript will contain a vast array of Bad Business Ideas, ex. Make Dinosaur Is
 
 Main welcome page
 
-![Image of BBI Welcome page](https://i.imgur.com/JjPv9Xo)
+![Image of BBI Welcome page](https://i.imgur.com/JjPv9Xo.jpg)
 
 User input page used to initiate the robots
 
