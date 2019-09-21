@@ -36,15 +36,15 @@ Main welcome page
 
 User input page used to initiate the robots
 
-![Image of user input screen](https://i.imgur.com/vijENrq.jpg)
+![Image of user input screen](https://i.imgur.com/Hyt5zjG.jpg)
 
 Return of Bad Business Idea
 
-![Bad Business Idea](https://i.imgur.com/ColVmR8.jpg)
+![Bad Business Idea](https://i.imgur.com/Qn5zdbk.jpg)
 
 Recently added Contact Us page
 
-![Contact Page](https://i.imgur.com/xm2RkDO.jpg)
+![Contact Page](https://i.imgur.com/1GObMJJ.jpg)
 
 
 Main Bad Business Idea Collaborators are Jarrett Newby and Marc Craig. Both of whom are instrumental geniuses. 
