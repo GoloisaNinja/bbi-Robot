@@ -167,6 +167,7 @@ $(document).ready(function() {
   }, 100)
 });
 </script>
+<script src="arrayContent.js"></script>
 <script src="main.js"></script>
 
 
