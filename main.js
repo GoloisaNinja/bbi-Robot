@@ -18,7 +18,6 @@ const pageCheck = function(){
 // HIDDEN FORM FUNCTION - SHIFTS FROM HIDDEN TO VISIBLE IF CLICKED
 // =============================================================
 
-  
     mainSurveyButton.addEventListener('click', function(e){
       if (mainHidden.style.visibility === 'hidden') {
           mainHidden.style.visibility = 'visible'
@@ -45,13 +44,13 @@ const pageCheck = function(){
       triggerClean = e.target.elements.inputFreud.value
       startUpAttrib = 'Important Startup Attribute: ' + e.target.elements.inputImpAttrib.value
       startAttribClean = e.target.elements.inputImpAttrib.value
-      localStorage.setItem('First Name', surveyName)
-      localStorage.setItem('Startup Concept', startCon)
-      localStorage.setItem('Startup Concept Clean', startConClean)
-      localStorage.setItem('Trigger', triggerWord)
-      localStorage.setItem('Trigger Clean', triggerClean)
-      localStorage.setItem('Startup Attribute', startUpAttrib)
-      localStorage.setItem('Startup Attribute Clean', startAttribClean)
+      localStorage.setItem('First Name', surveyName.trim())
+      localStorage.setItem('Startup Concept', startCon.trim())
+      localStorage.setItem('Startup Concept Clean', startConClean.trim())
+      localStorage.setItem('Trigger', triggerWord.trim())
+      localStorage.setItem('Trigger Clean', triggerClean.trim())
+      localStorage.setItem('Startup Attribute', startUpAttrib.trim())
+      localStorage.setItem('Startup Attribute Clean', startAttribClean.trim())
       window.location = 'results.html'
       }
     })
