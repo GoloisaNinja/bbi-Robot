@@ -91,7 +91,7 @@
         <option>Creating your own Religion</option>
         <option>Revenge</option>
         <option>Deliciousness</option>
-       <option>Just sayying hi</option>
+       <option>Just saying hi</option>
       </select>
       </div>
       </div>
