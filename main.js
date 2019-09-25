@@ -83,17 +83,18 @@ const pageCheck = function(){
         instaDismiss.style.display = 'none'
         document.getElementById('instaP').textContent = ''
         document.getElementById('statusBar').style.display = ''
+        document.getElementById('barContSpace').style.display = ''
         document.getElementById('statText').textContent = getRandom(loadArray)
         setTimeout(function(){
           document.getElementById('statusBar').style.display = 'none'
           instaDismiss.style.display = ''
           document.getElementById('instaP').textContent = pBadTag
-        }, 3337)
+        }, 2000)
       })
 
       instaClose.addEventListener('click', function(e){
         localStorage.clear()
-        if (document.getElementById('instaP').innerHTML != 'Just give us one trigger word to work with...') {
+        if (document.getElementById('instaP').innerHTML != 'Enter your startup idea tag or trigger word...') {
           history.go(0)
         }
       })
