@@ -167,8 +167,8 @@ $(document).ready(function() {
   }, 100)
 });
 </script>
-<script src="arrayContent.js"></script>
-<script src="main.js"></script>
+<script src="arrConMinJs.js"></script>
+<script src="mainMinJs.js"></script>
 
 
 
