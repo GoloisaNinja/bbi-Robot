@@ -13,13 +13,39 @@ HTML/CSS/Javascript/JQuery(limited)/PHP
 **Intent:** 
 
 Using mostly vanilla JS, create a site that encourages a user to input
-Name - ex. jack
-Current Business - ex. toxic glue mfg
-Years at Current Business - ex. 5yrs I start fires in closets
-Impact of Desired Idea - ex. Big marble dropping into milk
-Category of Idea - ex. Putting a curse on a fellow employee
-Idea tags - ex. voodoo, juju, profits, world domination
-Javascript will contain a vast array of Bad Business Ideas, ex. Make Dinosaur Island from dino dna extracted from amber. Using fun string methods and various algorithmic javascript functions, I will key in on user input tags and idea impact (levels) to suggest a somewhat compatible Bad Business Idea. 
+Name - ex. FizzleBits McQuarrey
+Startup Idea - ex. toxic glue mfg
+Starup Tag/Trigger word - ex. Facebook for cats!
+Attribute of Startup - ex. Innovation
+Javascript will contain a vast array of Bad Business Ideas, ex. Ski Trips with Bears. Using fun string methods and various algorithmic javascript functions (possibly regex), I will key in on user input tags and concept sentences to suggest a somewhat compatible Bad Business Idea. Or at the very least, one that has similar contextual wording. 
+
+**Branches:** 
+
+Master Branch contains fully minified versions of all files as well as optimised compressed jpg images
+I realise this can be very difficult to read and clone for your own uses
+Please note the Test branch - this branch contains most Master files AS WELL AS my original Refactored UnMinified HTML/CSS/JS/PHP files
+Test branch is much easier to read and parse what is happening
+I found my out-of-country super cheapskate host site to be somewhat slow on seconds to first byte being served and page load for index.html was over 15 seconds before all the optimisation efforts. Google's site speed test now confirms a page load of just 2.3 seconds, which is still slow considering this site really isn't that intense, but I'll take the improvements that optimisation provided. 
+
+I used 
+http://htmlcompressor.com/
+for HTML compression/minify/beautify
+
+I used
+http://css.github.io/csso/csso.html
+for CSS compression/minify/beautify
+
+I used the closure compiler API
+https://developers.google.com/closure/compiler
+details here for JS compression/minify/beautify
+
+All credit for the above to 
+https://developers.google.com/speed/docs/insights/MinifyResources
+Google resources on optimisation
+https://github.com/css/csso
+CSSO github resource and brilliant web interface
+http://htmlcomressor.com/
+HTML online compression tool
 
 **Future expansion:**
 
