@@ -80,7 +80,13 @@ const pageCheck = function(){
         instaForm.reset()
         instaForm.remove()
         instaSub.remove()
-        document.getElementById('instaP').textContent = pBadTag
+        document.getElementById('instaP').textContent = ''
+        document.getElementById('statusBar').style.display = ''
+        document.getElementById('statText').textContent = getRandom(loadArray)
+        setTimeout(function(){
+          document.getElementById('statusBar').style.display = 'none'
+          document.getElementById('instaP').textContent = pBadTag
+        }, 3337)
       })
 
       instaClose.addEventListener('click', function(e){

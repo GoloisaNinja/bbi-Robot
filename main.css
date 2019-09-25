@@ -79,6 +79,12 @@ option{
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://i.imgur.com/RUEkGW2.jpg");
   background-position: top;
 }
+.progress, .progress-bar{
+  font-family: 'Khand', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  height: 30px;
+}
 /* ===========================================================*/
 /* Accordion Controls
 ===============================================================*/
