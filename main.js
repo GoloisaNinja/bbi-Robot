@@ -101,7 +101,7 @@ const pageCheck = function(){
 
       instaDismiss.addEventListener('click', function(e){
         localStorage.clear()
-        if (document.getElementById('instaP').innerHTML != 'Just give us one trigger word to work with...') {
+        if (document.getElementById('instaP').innerHTML != 'Enter your startup idea tag or trigger word...') {
           history.go(0)
         }
       })
