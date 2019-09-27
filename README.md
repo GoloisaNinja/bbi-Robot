@@ -25,7 +25,7 @@ Master Branch contains fully minified versions of all files as well as optimised
 I realise this can be very difficult to read and clone for your own uses
 Please have a glance at the Test branch - this branch contains most Master files AS WELL AS my original Refactored UnMinified HTML/CSS/JS/PHP files
 Test branch files are refactored and much easier to read and discern what is happening
-I found my server to be somewhat slow on seconds to first byte being served and page load for index.html was over 15 seconds before all the optimisation efforts. Google's page insights site speed test now confirms a page optimisation of 96% on mobile and 99% on desktop. GTMetric.com registers a score of 96% as well with a Yslow of 92%.  Optimisation resources below:
+I found my server to be somewhat slow on seconds to first byte being served and page load for index.html was over 15 seconds before all the optimisation efforts. Google's page insights site speed test now confirms a page optimisation of 96% on mobile and 99% on desktop. GTMetrix.com registers a score of 96% as well with a Yslow of 92%.  Optimisation resources below:
 
 I used 
 http://htmlcompressor.com/
