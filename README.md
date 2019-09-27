@@ -17,15 +17,15 @@ Name - ex. FizzleBits McQuarrey
 Startup Idea - ex. toxic glue mfg
 Starup Tag/Trigger word - ex. Facebook for cats!
 Attribute of Startup - ex. Innovation
-Javascript will contain a vast array of Bad Business Ideas, ex. Ski Trips with Bears. Using fun string methods and various algorithmic javascript functions (possibly regex), I will key in on user input tags and concept sentences to suggest a somewhat compatible Bad Business Idea. Or at the very least, one that has similar contextual wording. 
+Javascript will contain a vast array of Bad Business Ideas, ex. Ski Trips with Bears. Using fun string methods and various algorithmic javascript functions along with RegEx, I will key in on user input tags and concept sentences to suggest a somewhat compatible Bad Business Idea. Or at the very least, one that has similar contextual wording. 
 
 **Branches:** 
 
 Master Branch contains fully minified versions of all files as well as optimised compressed jpg images
 I realise this can be very difficult to read and clone for your own uses
-Please note the Test branch - this branch contains most Master files AS WELL AS my original Refactored UnMinified HTML/CSS/JS/PHP files
-Test branch is much easier to read and parse what is happening
-I found my out-of-country super cheapskate host site to be somewhat slow on seconds to first byte being served and page load for index.html was over 15 seconds before all the optimisation efforts. Google's site speed test now confirms a page load of just 2.3 seconds, which is still slow considering this site really isn't that intense, but I'll take the improvements that optimisation provided. 
+Please have a glance at the Test branch - this branch contains most Master files AS WELL AS my original Refactored UnMinified HTML/CSS/JS/PHP files
+Test branch files are refactored and much easier to read and discern what is happening
+I found my server to be somewhat slow on seconds to first byte being served and page load for index.html was over 15 seconds before all the optimisation efforts. Google's page insights site speed test now confirms a page optimisation of 96% on mobile and 99% on desktop. GTMetric.com registers a score of 96% as well with a Yslow of 92%.  Optimisation resources below:
 
 I used 
 http://htmlcompressor.com/
@@ -51,7 +51,10 @@ HTML online compression tool
 
 - [ ] Move Bad Business Idea arrays/categories etc. to Data Base
 - [ ] Learn Data Base language/use (maybe do this first)
+- [x] Refactor code for scalability and readability
+- [x] Enhance patented neural engine with RegEx objects
 - [x] Add a contact page that will support email submission of Bad Business Ideas
+- [x] Minify, combine and compress Javascript
 - [ ] Implement work flow to push submitted ideas to database if approved 
 
 **Screenshots**
@@ -79,7 +82,7 @@ Or if they aren't, they should be.
 
 Site is currently hosted at
 
-https://www.goloisaninja.online
+https://goloisaninja.online
 
 Jarrett's Newbsanity Site is hosted at
 
