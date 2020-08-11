@@ -187,7 +187,7 @@ const pageCheck = function(){
 
 // CHECK THAT ALL FIELDS ARE FILLED THEN USE AJAX TO POST TO SERVER - TARGET IS FORM PHP
 
-        if (contactName == '' || contactEmail == '' || contactCategory == '' || contactTagList == '' || contactIdeaVal == '') {
+        if (contactName == '' || contactEmail == '' || contactCategory == '' || contactCategory == 'click to choose an option...' || contactTagList == '' || contactIdeaVal == '') {
           alert('You need to fill out all fields meatbag...')
         } else {
           $.ajax({
